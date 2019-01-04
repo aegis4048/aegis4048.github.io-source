@@ -3,35 +3,50 @@
 {% block headerimg %}{% if page.headerimg %}{{ page.headerimg }}{% else %}{{ DEFAULT_HEADER_BG }}{% endif %}{% endblock %}
 
 {% block content %}
-
+<style>
+.profile-banner {
+    background: url('https://s3-eu-west-1.amazonaws.com/img3.n-ix.com/wp-content/uploads/2016/12/16152229/Data-Science-Outsourcing-BLOG-banner-1920-Copy-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 550px;
+}
+</style>
+<div class="profile-banner" align="center">
+    <div class="cc-profile-image">
+        <a href="#"><img src="https://github.com/aegis4048/aegis4048.github.io-source/blob/master/content/images/profile_photo.jpg?raw=true" alt="Image"></a>
+    </div>
+</div>
 <div class="container post">
     <article>
         <header class="about">
           <h1>{{ page.title }}</h1>
           {% if page.date %}
-          <time datetime="page.date.isoformat()" pubdate>{{ page.locale_date }}</time>
+          <time datetime="page.date.isoformat()">{{ page.locale_date }}</time>
           {% endif %}
-	  <div class="social-links">
-	    <ul>
-	      {% if AUTHOR_WEBSITE %}
-	      <li><a href="{{ AUTHOR_WEBSITE }}" rel="me">website</a></li>
+          <div class="social-links">
+            <ul>
+              {% if AUTHOR_WEBSITE %}
+              <li><a href="{{ AUTHOR_WEBSITE }}" rel="me">website</a></li>
+                  {% endif %}
+              {% if AUTHOR_BLOG %}
+              <li><a href="{{ AUTHOR_BLOG }}" rel="me">blog</a></li>
+                  {% endif %}
+              {% if AUTHOR_CV %}
+              <li><a href="{{ AUTHOR_CV }}" rel="me">CV</a></li>
               {% endif %}
-	      {% if AUTHOR_BLOG %}
-	      <li><a href="{{ AUTHOR_BLOG }}" rel="me">blog</a></li>
+              {% if TWITTER_USERNAME %}
+              <li><a class="nodec icon-twitter" href="http://twitter.com/{{ TWITTER_USERNAME }}" rel="me"></a></li>
+                  {% endif %}
+                  {% if GITHUB_USERNAME %}
+              <li><a class="nodec icon-github" href="http://github.com/{{ GITHUB_USERNAME }}" rel="me"></a></li>
+                  {% endif %}
+                  {% if STACKOVERFLOW_ADDRESS %}
+              <li><a class="nodec icon-stackoverflow" href="{{ STACKOVERFLOW_ADDRESS }}" rel="me"></a></li>
               {% endif %}
-	      {% if AUTHOR_CV %}
-	      <li><a href="{{ AUTHOR_CV }}" rel="me">CV</a></li>
-	      {% endif %}
-	      {% if TWITTER_USERNAME %}
-	      <li><a class="nodec icon-twitter" href="http://twitter.com/{{ TWITTER_USERNAME }}" rel="me"></a></li>
-              {% endif %}
-              {% if GITHUB_USERNAME %}
-	      <li><a class="nodec icon-github" href="http://github.com/{{ GITHUB_USERNAME }}" rel="me"></a></li>
-              {% endif %}
-              {% if STACKOVERFLOW_ADDRESS %}
-	      <li><a class="nodec icon-stackoverflow" href="{{ STACKOVERFLOW_ADDRESS }}" rel="me"></a></li>
-	      {% endif %}
-	    </ul>
+            </ul>
+          </div>
         </header>
 
         <div class="article_content">
