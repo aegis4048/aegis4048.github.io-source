@@ -49,7 +49,6 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 # THEME SETTINGS
 THEME = './theme/'
 
-ABOUT_PAGE = '/pages/about.html'
 SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
 
@@ -57,6 +56,10 @@ ENABLE_MATHJAX = True
 
 STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
+ABOUT_PAGE = '/pages/about.html'
+
 # Footer info
 LICENSE_URL = ""
 LICENSE = ""
+
+READERS = {'html': None}
