@@ -11,6 +11,7 @@ body {
     background-color: #24292e;
     width: 100%;
     margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 #navbar {
     background-color: #24292e !important;
@@ -246,6 +247,7 @@ footer p {
 /* page content */
 #wrap {
     background-color: #fff;
+    position: relative;
 }
 .masthead {
     padding: 4rem 0;
@@ -686,4 +688,111 @@ div.output_area .rendered_html table {
 
 .tag-title::before {
     content: none !important;
+}
+
+/*About page*/
+.about-content-center {
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 0;
+}
+#about-profile-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 15px solid transparent;
+}
+.about-profile-banner {
+    background: url('https://s3-eu-west-1.amazonaws.com/img3.n-ix.com/wp-content/uploads/2016/12/16152229/Data-Science-Outsourcing-BLOG-banner-1920-Copy-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+}
+.about-content-center {
+}
+.about-author {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+}
+.about-author-subtitle {
+    font-weight: 700;
+}
+@-webkit-keyframes rounded{
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity:0.0
+    }
+    50% {
+        opacity:1.0
+    }
+    100% {
+        -webkit-transform:scale(1, 1);
+        transform:scale(1, 1);
+        opacity:0.0
+    }
+}
+@keyframes rounded{
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity:0.0
+    }
+    50% {
+        opacity:1.0
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity:0.0
+    }
+}
+.cc-profile-image a {
+    position: relative;
+    z-index: 0;
+}
+.cc-profile-image a:before {
+    content: "";
+    border: 15px solid #175597;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    -webkit-animation: rounded 1.6s ease-out;
+    animation: rounded 1.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+    z-index: -1;
+}
+.about-button-container {
+    left: 0;
+    right: 0;
+    top: 508px;
+    position: absolute;
+}
+.about-button {
+    border-width: 1px;
+    border-radius: 50%;
+    background-color: #888;
+    font-weight: 400;
+    margin: 5px 1px;
+    color: #fff;
+    padding: 0;
+    height: 4.6rem;
+    min-width: 4.6rem;
+    width: 4.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-button i {
+    font-size: 1.5rem;
 }
