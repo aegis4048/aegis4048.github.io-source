@@ -1,6 +1,12 @@
 body {
     font-size: 0.85rem;
 }
+.no-margin {
+    margin: 0 !important;
+}
+.title-color {
+    color: #23a19d;
+}
 
 /*navbar begin*/
 .banner {
@@ -516,21 +522,6 @@ article .meta a.comments_btn:hover {
     max-width: 960px;
     margin-top: 3rem;
 }
-.post h2:before {
-  content: "# ";
-  font-weight: bold;
-  color: #DDD;
-}
-.post h3:before {
-  content: "## ";
-  font-weight: bold;
-  color: #DDD;
-}
-.post h4:before {
-  content: "### ";
-  font-weight: bold;
-  color: #DDD;
-}
 .list {
   max-width: 960px;
 }
@@ -712,6 +703,7 @@ div.output_area .rendered_html table {
     background-size: cover;
     min-height: 550px;
     position: relative;
+    margin: 0 !important;
 }
 .about-content-center {
 }
@@ -795,4 +787,34 @@ div.output_area .rendered_html table {
 }
 .about-button i {
     font-size: 1.5rem;
+}
+.section p {
+    font-size: 1rem;
+}
+.about-container-wrapper {
+    background: #ddddde;
+}
+.experience-details {
+    display: block;
+    margin-top: 1rem;
+}
+.experience-details .fa {
+    margin-right: 0.7rem;
+}
+.experience-details .seperator {
+    margin: 0 1rem;
+}
+.experience-details span,
+.experience-details a,
+.experience-details .fa {
+    color: #23a19d;
+}
+.experience-description {
+    line-height: 1.8;
+}
+.experience-description i {
+    vertical-align: middle;
+    margin-right: 1rem;
+    font-size: 0.5rem;
+    margin-left: 0.1rem;
 }

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dd4bdb7-609a-4a06-a441-b38b93b795a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/about.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pelicanconf.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/templates/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/css/custom.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,17 +18,29 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+            <state relative-caret-position="160">
+              <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/pages/about.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="48">
+                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="793" column="28" selection-start-line="793" selection-start-column="28" selection-end-line="793" selection-end-column="28" />
+            <state relative-caret-position="283">
+              <caret line="798" column="21" selection-start-line="798" selection-start-column="21" selection-end-line="798" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -39,19 +48,20 @@
       <file leaf-file-name="pelicanconf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pelicanconf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="432">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+            <state relative-caret-position="68">
+              <caret line="164" column="40" lean-forward="true" selection-start-line="164" selection-start-column="40" selection-end-line="165" selection-end-column="38" />
               <folding>
-                <element signature="e#873#3005#0#HTML" />
+                <element signature="e#4160#5300#0#HTML" />
+                <element signature="e#5806#7128#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -85,9 +95,14 @@
       <find>img</find>
       <find>profile</find>
       <find>profile_img</find>
-      <find>.jpg</find>
       <find>#wrap</find>
+      <find>about-profile-banner</find>
+      <find />
       <find>align</find>
+      <find>font-awesome</find>
+      <find>before</find>
+      <find>.jpg</find>
+      <find>col-md-4</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\EricKim\Documents\aegis4048.github.io-source\content\downloads</dir>
@@ -103,12 +118,13 @@
         <option value="$PROJECT_DIR$/theme/templates/archives.html" />
         <option value="$PROJECT_DIR$/content/pages/about.html" />
         <option value="$PROJECT_DIR$/content/pages/a.md" />
-        <option value="$PROJECT_DIR$/theme/templates/base.html" />
-        <option value="$PROJECT_DIR$/pelicanconf.py" />
         <option value="$PROJECT_DIR$/content/pages/about.md" />
         <option value="$PROJECT_DIR$/output/articles/2019/01/04/non-parametric-confidence-intervals-with-bootstrap/index.html" />
-        <option value="$PROJECT_DIR$/theme/templates/about.html" />
+        <option value="$PROJECT_DIR$/theme/templates/base.html" />
+        <option value="$PROJECT_DIR$/output/pages/about.html" />
         <option value="$PROJECT_DIR$/theme/templates/css/custom.css" />
+        <option value="$PROJECT_DIR$/pelicanconf.py" />
+        <option value="$PROJECT_DIR$/theme/templates/about.html" />
       </list>
     </option>
   </component>
@@ -122,8 +138,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1905" />
-    <option name="width" value="1948" />
+    <option name="x" value="1422" />
+    <option name="width" value="2433" />
     <option name="height" value="2175" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -159,66 +175,7 @@
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-              <item name="uncertainty-modeling-with-monte-carlo-simulation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-              <item name="04" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-              <item name="04" type="462c0819:PsiDirectoryNode" />
-              <item name="non-parametric-confidence-intervals-with-bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
@@ -304,7 +261,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="779" height="870" extended-state="0" />
+    <frame x="569" y="0" width="973" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -314,7 +271,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.023097826" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5769764" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5767941" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
@@ -380,7 +337,8 @@
         <state relative-caret-position="320">
           <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
-            <element signature="e#873#3005#0#HTML" />
+            <element signature="e#4160#5300#0#HTML" />
+            <element signature="e#5806#7128#0#HTML" />
           </folding>
         </state>
       </provider>
@@ -509,23 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/pages/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="738" column="10" selection-start-line="738" selection-start-column="10" selection-end-line="738" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/pages/about.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="48">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9112">
@@ -540,34 +481,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+    <entry file="file://$PROJECT_DIR$/output/pages/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-          <folding>
-            <element signature="e#873#3005#0#HTML" />
-          </folding>
+        <state relative-caret-position="-8">
+          <caret line="1063" column="6" selection-start-line="1063" selection-start-column="6" selection-end-line="1063" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/templates/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="793" column="28" selection-start-line="793" selection-start-column="28" selection-end-line="793" selection-end-column="28" />
+        <state relative-caret-position="283">
+          <caret line="798" column="21" selection-start-line="798" selection-start-column="21" selection-end-line="798" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/pages/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="164" column="40" lean-forward="true" selection-start-line="164" selection-start-column="40" selection-end-line="165" selection-end-column="38" />
+          <folding>
+            <element signature="e#4160#5300#0#HTML" />
+            <element signature="e#5806#7128#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
