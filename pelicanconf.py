@@ -3,6 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'ERIC SOOBIN KIM'
+AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
 SITEURL = ''
@@ -63,3 +64,6 @@ LICENSE_URL = ""
 LICENSE = ""
 
 READERS = {'html': None}
+
+GITHUB_LINK = 'https://github.com/aegis4048'
+LINKEDIN_LINK = 'https://www.linkedin.com/in/eric-kim-34318811b/'
