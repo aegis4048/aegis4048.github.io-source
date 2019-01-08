@@ -46,6 +46,7 @@ IGNORE_FILES = ['.ipynb_checkpoints']
 # for liquid tags
 CODE_DIR = 'downloads/code'
 NOTEBOOK_DIR = 'downloads/notebooks'
+MISC_DIR = 'downloads/misc'
 
 # THEME SETTINGS
 THEME = './theme/'
