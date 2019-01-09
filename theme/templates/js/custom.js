@@ -13,7 +13,7 @@ function init_navbar () {
     window.isCollapsed = true;
     $('.btn-search').on('click', function () {
         if (window.windowSize > COLLAPSE_WIDTH) {
-            $('#tipue_search_input').toggleClass('hidden');
+            //$('#tipue_search_input').toggleClass('hidden');
             $('.navbar-nav').toggleClass('hidden');
         }
         window.isCollapsed = !isCollapsed
@@ -22,7 +22,7 @@ function init_navbar () {
 function check_width() {
     window.windowSize = $(window).outerWidth();
     if (windowSize < COLLAPSE_WIDTH) {
-        $('#tipue_search_input').removeClass('hidden');
+        //$('#tipue_search_input').removeClass('hidden');
         $('.navbar-nav').removeClass('hidden');
         $('.nav-link').addClass('collapsed');
         $('#search-form').addClass('collapsed');
@@ -33,7 +33,7 @@ function check_width() {
 
     }
     if (windowSize > COLLAPSE_WIDTH) {
-        $('#tipue_search_input').addClass('hidden');
+        //$('#tipue_search_input').addClass('hidden');
         //$('#search-btn').removeClass('hidden');
         $('.navbar-nav').removeClass('hidden');
         $('.nav-link').removeClass('collapsed');
