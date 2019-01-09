@@ -94,7 +94,7 @@ body {
 
 }
 #tipue_search_input {
-    width: 250px;
+    width: auto !important;
     border: none !important;
     height: 1.8rem !important;
     display: inline-block;
@@ -110,6 +110,7 @@ body {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
     padding-right: 15px;
+    padding-left: 15px;
 }
 #search-form .row .collapsed{
     border-radius: .25rem;
@@ -128,6 +129,7 @@ form .row .collapsed{
 #search-btn {
     height: 1.8rem;
     padding: 1px 6px !important;
+    min-width: 60px;
 }
 #last-item .collapsed{
     background-color: #151515;
