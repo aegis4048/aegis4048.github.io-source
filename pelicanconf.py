@@ -57,9 +57,12 @@ SHOW_FEED = False  # Need to address large feeds
 
 ENABLE_MATHJAX = True
 
-STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
+STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico', 'logo_with_subtitle.svg', 'logo_no_subtitle.svg', 'logo_icon.svg']
 
 ABOUT_PAGE = '/pages/about.html'
+
+# logo created at https://vectr.com/
+BANNER_LOGO = '/logo_with_subtitle.svg'
 
 # Footer info
 LICENSE_URL = ""
