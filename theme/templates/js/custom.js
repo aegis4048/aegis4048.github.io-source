@@ -1,4 +1,5 @@
 var COLLAPSE_WIDTH = 575;
+var LOGO_COLLAPSE_WIDTH = 768;
 
 function init_navbar () {
     $('.nav-link').on( {
@@ -45,6 +46,19 @@ function check_width() {
         $('.search-box-div').css('display', 'inherit');
         $('.search-box-div').removeClass('row');
     }
+
+    if (windowSize < LOGO_COLLAPSE_WIDTH) {
+        if (windowSize < COLLAPSE_WIDTH) {
+            $('#banner-logo').attr('src', LOGO_WITH_SUBTITLE)
+        }
+        else {
+            $('#banner-logo').attr('src', LOGO_ICON)
+        }
+    }
+    if (windowSize >= LOGO_COLLAPSE_WIDTH) {
+        $('#banner-logo').attr('src', LOGO_WITH_SUBTITLE)
+    }
+
 }
 function jupyter_css() {
     if (window.windowSize > 486) {

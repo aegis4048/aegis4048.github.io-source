@@ -21,6 +21,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
 
+        <script>
+            var LOGO_ICON = '{{ LOGO_ICON }}';
+            var LOGO_WITH_SUBTITLE = '{{ LOGO_WITH_SUBTITLE }}';
+        </script>
         <script type="text/javascript">{% include 'js/custom.js' %}</script>
         <style>{% include "css/tipue_search.css" %}</style>
         <style>{% include "css/custom.css" %}></style>
@@ -41,7 +45,7 @@
             <div class="banner">
                 <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light container">
                     <div class="container navbar-title">
-                        <a href="/"><img src="/logo_with_subtitle.svg" style="height: 40px; margin: 6px;"></a>
+                        <a href="/"><img id="banner-logo" src="/logo_with_subtitle.svg" style="height: 40px; margin: 6px 0;"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
