@@ -29,6 +29,7 @@ function check_width() {
         $('#search-form.row').addClass('collapsed');
         $('.navbar-title').addClass('collapsed');
         $('.search-box-div').css('display', '');
+        $('.search-box-div').addClass('row');
 
     }
     if (windowSize > COLLAPSE_WIDTH) {
@@ -42,6 +43,7 @@ function check_width() {
         $('.navbar-toggler').css('margin-right', '0');
         $('.navbar-title').removeClass('collapsed');
         $('.search-box-div').css('display', 'inherit');
+        $('.search-box-div').removeClass('row');
     }
 }
 function jupyter_css() {
