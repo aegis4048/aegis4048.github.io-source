@@ -62,7 +62,8 @@ STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico', 'logo
 ABOUT_PAGE = '/pages/about.html'
 
 # logo created at https://vectr.com/
-BANNER_LOGO = '/logo_with_subtitle.svg'
+LOGO_WITH_SUBTITLE = '/logo_with_subtitle.svg'
+LOGO_ICON = '/logo_icon.svg'
 
 # Footer info
 LICENSE_URL = ""
