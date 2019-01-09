@@ -14,7 +14,7 @@ function init_navbar () {
     $('.btn-search').on('click', function () {
         if (window.windowSize > COLLAPSE_WIDTH) {
             //$('#tipue_search_input').toggleClass('hidden');
-            $('.navbar-nav').toggleClass('hidden');
+            //$('.navbar-nav').toggleClass('hidden');
         }
         window.isCollapsed = !isCollapsed
     });
