@@ -39,7 +39,8 @@ PLUGINS = [
     'liquid_tags.img',  # embedding images
     'liquid_tags.video',  # embedding videos
     'liquid_tags.include_code',  # including code blocks
-    'liquid_tags.literal'
+    'liquid_tags.literal',
+    'tipue_search.tipue_search',
 ]
 IGNORE_FILES = ['.ipynb_checkpoints']
 
