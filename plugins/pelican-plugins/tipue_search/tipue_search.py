@@ -9,6 +9,7 @@ that can be used by jQuery plugin - Tipue Search.
 Copyright (c) Talha Mansoor
 """
 
+
 from __future__ import unicode_literals
 
 import os.path
@@ -104,6 +105,17 @@ class Tipue_Search_JSON_Generator(object):
 
         with open(path, 'w', encoding='utf-8') as fd:
             json.dump(root_node, fd, separators=(',', ':'), ensure_ascii=False)
+
+        """
+        Modification by Eric Kim
+        """
+
+        path_2 = os.path.join(self.output_path, 'pages')
+        path_2 = os.path.join(path_2, 'tipuesearch_content.json')
+        with open(path_2, 'w', encoding='utf-8') as fd:
+            json.dump(root_node, fd, separators=(',', ':'), ensure_ascii=False)
+
+        path_3 = os.path.join(self.output_path, '')
 
 
 def get_generators(generators):

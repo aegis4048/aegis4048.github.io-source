@@ -71,3 +71,9 @@ GITHUB_LINK = 'https://github.com/aegis4048'
 LINKEDIN_LINK = 'https://www.linkedin.com/in/eric-kim-34318811b/'
 PROFILE_INTRODUCTION = 'My name is Eric Kim - Web Developer, Data Scientist, and Petroleum Engineer. \n SOMETHING'
 
+import os
+
+if not os.path.exists('output'):
+    os.makedirs('output')
+
+

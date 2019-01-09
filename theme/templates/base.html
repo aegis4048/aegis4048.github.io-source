@@ -20,9 +20,9 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.css">
 
         <script type="text/javascript">{% include 'js/custom.js' %}</script>
+        <style>{% include "css/tipue_search.css" %}</style>
         <style>{% include "css/custom.css" %}></style>
         <script>
                 $(document).ready(function() {
@@ -55,7 +55,7 @@
                             <a class="nav-link rem_08" href="/archives.html">Archive</a>
                         </li>
                      </ul>
-                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center" action="/">
+                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center">
                         <div class="search-box-div">
                             <input id="tipue_search_input" class="form-control mr-sm-2 hidden rem_08" type="text" name="q" pattern=".{3,}" title="At least 3 characters" required="" aria-label="Search">
                             <button id="search-btn" class="btn btn-search btn-outline-success my-2 my-sm-0 btn-circle rem_08" type="button">Search</button>
@@ -65,9 +65,9 @@
                 </nav>
             </div>
         </div>
-        <div id="tipue_search_content"></div>
 
         <div id="wrap" class="mb-5">
+            <div id="tipue_search_content" class="container"></div>
             {% block content %}{% endblock %}
         </div>
         <footer class="footer">
