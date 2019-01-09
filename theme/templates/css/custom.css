@@ -263,6 +263,7 @@ footer p {
 #wrap {
     background-color: #fff;
     position: relative;
+    min-height: 450px;
 }
 .masthead {
     padding: 4rem 0;
