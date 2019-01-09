@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dd4bdb7-609a-4a06-a441-b38b93b795a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aegis4048.github.io-source.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aegis4048.github.io-source.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pelicanconf.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/js/custom.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,26 +19,35 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+            <state relative-caret-position="22">
+              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/theme/templates/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="43" column="22" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
+            <state relative-caret-position="230">
+              <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/templates/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12464">
-              <caret line="779" column="1" selection-start-line="779" selection-start-column="1" selection-end-line="779" selection-end-column="1" />
+            <state relative-caret-position="326">
+              <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -64,8 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>save_</find>
-      <find>about.md</find>
       <find>about</find>
       <find>READERS</find>
       <find>about.html</find>
@@ -93,6 +99,9 @@
       <find>col-md-4</find>
       <find />
       <find>font</find>
+      <find>GPA</find>
+      <find>searc</find>
+      <find>search-box</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\EricKim\Documents\aegis4048.github.io-source\content\downloads</dir>
@@ -111,10 +120,11 @@
         <option value="$PROJECT_DIR$/content/pages/about.md" />
         <option value="$PROJECT_DIR$/output/articles/2019/01/04/non-parametric-confidence-intervals-with-bootstrap/index.html" />
         <option value="$PROJECT_DIR$/output/pages/about.html" />
-        <option value="$PROJECT_DIR$/theme/templates/css/custom.css" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
-        <option value="$PROJECT_DIR$/theme/templates/base.html" />
         <option value="$PROJECT_DIR$/theme/templates/about.html" />
+        <option value="$PROJECT_DIR$/theme/templates/js/custom.js" />
+        <option value="$PROJECT_DIR$/theme/templates/base.html" />
+        <option value="$PROJECT_DIR$/theme/templates/css/custom.css" />
       </list>
     </option>
   </component>
@@ -191,6 +201,13 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -251,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="779" height="870" extended-state="0" />
+    <frame x="753" y="0" width="789" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -261,7 +278,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.023097826" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.47434118" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20858485" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
@@ -350,9 +367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2352">
           <caret line="147" column="80" selection-start-line="147" selection-start-column="80" selection-end-line="147" selection-end-column="80" />
-          <folding>
-            <element signature="e#1301#3596#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -398,9 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#1301#3596#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12464">
-          <caret line="779" column="1" selection-start-line="779" selection-start-column="1" selection-end-line="779" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/tipuesearch_content.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -580,20 +584,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        <state relative-caret-position="230">
+          <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
+    <entry file="file://$PROJECT_DIR$/theme/templates/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <element signature="e#1301#3596#0#HTML" />
-          </folding>
+        <state relative-caret-position="331">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
         </state>
       </provider>
     </entry>
