@@ -93,11 +93,17 @@ body {
 .search-box-div {
 
 }
-#search-box {
+#tipue_search_input {
     width: 250px;
-    border: none;
-    height: 1.8rem;
+    border: none !important;
+    height: 1.8rem !important;
     display: inline-block;
+    font: inherit !important;
+    color: inherit !important;
+    border-radius: .25rem !important;
+    outline: unset !important;
+    padding: 6px 12px !important;
+    background: #fff !important;
 }
 #search-form {
     height: 37px;

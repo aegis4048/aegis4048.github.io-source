@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-        <style>{% include "css/custom.css" %}></style>
-
     	<!-- jQuery 3.3.1 -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -25,6 +23,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.css">
 
         <script type="text/javascript">{% include 'js/custom.js' %}</script>
+        <style>{% include "css/custom.css" %}></style>
         <script>
                 $(document).ready(function() {
                      $('#tipue_search_input').tipuesearch({
@@ -37,13 +36,6 @@
     </head>
 
     <body>
-    <form action="/">
-        <div class=""><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required=""></div>
-        <div style="clear: both;"></div>
-    </form>
-
-    <div id="tipue_search_content"></div>
-
 
         <div class="banner-wrapper row" style="background-color: #24292e;">
             <div class="banner">
@@ -63,9 +55,9 @@
                             <a class="nav-link rem_08" href="/archives.html">Archive</a>
                         </li>
                      </ul>
-                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center">
+                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center" action="/">
                         <div class="search-box-div">
-                            <input id="search-box" class="form-control mr-sm-2 hidden rem_08" type="search" placeholder="search by #tag" aria-label="Search">
+                            <input id="tipue_search_input" class="form-control mr-sm-2 hidden rem_08" type="text" name="q" pattern=".{3,}" title="At least 3 characters" required="" aria-label="Search">
                             <button id="search-btn" class="btn btn-search btn-outline-success my-2 my-sm-0 btn-circle rem_08" type="button">Search</button>
                         </div>
                     </form>
@@ -73,6 +65,7 @@
                 </nav>
             </div>
         </div>
+        <div id="tipue_search_content"></div>
 
         <div id="wrap" class="mb-5">
             {% block content %}{% endblock %}
