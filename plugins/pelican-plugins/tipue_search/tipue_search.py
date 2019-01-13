@@ -85,6 +85,8 @@ class Tipue_Search_JSON_Generator(object):
                 'tags': page_category,
                 'url': page_url}
 
+        print(page_text[:20])
+
         self.json_nodes.append(node)
 
 
@@ -106,16 +108,6 @@ class Tipue_Search_JSON_Generator(object):
         with open(path, 'w', encoding='utf-8') as fd:
             json.dump(root_node, fd, separators=(',', ':'), ensure_ascii=False)
 
-        """
-        Modification by Eric Kim
-        """
-
-        path_2 = os.path.join(self.output_path, 'pages')
-        path_2 = os.path.join(path_2, 'tipuesearch_content.json')
-        with open(path_2, 'w', encoding='utf-8') as fd:
-            json.dump(root_node, fd, separators=(',', ':'), ensure_ascii=False)
-
-        path_3 = os.path.join(self.output_path, '')
 
 
 def get_generators(generators):
