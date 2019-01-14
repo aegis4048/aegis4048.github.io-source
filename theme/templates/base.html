@@ -18,23 +18,28 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
 
         <script>
             var LOGO_ICON = '{{ LOGO_ICON }}';
             var LOGO_WITH_SUBTITLE = '{{ LOGO_WITH_SUBTITLE }}';
         </script>
-        <script type="text/javascript">{% include 'js/custom.js' %}</script>
-        <style>{% include "css/tipue_search.css" %}</style>
-        <style>{% include "css/custom.css" %}></style>
+
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/ipynb.css" media="screen">
+
+        <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
+        <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_content.js"></script>
+        <script type="text/javascript" src="{{ SITEURL }}/theme/js/custom.js"></script>
         <script>
-                $(document).ready(function() {
-                     $('#tipue_search_input').tipuesearch({
-                          'mode': 'json',
-                          'contentLocation': '/tipuesearch_content.json'
-                     });
-                });
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch({
+                     'mode' : 'json',
+                     'show': 10,
+                     'newWindow': false,
+                 });
+            });
         </script>
 
     </head>
@@ -111,6 +116,11 @@
               <!--social_footer_ul ends here-->
            </div>
         </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_content.js"></script>
 
     </body>
 </html>
