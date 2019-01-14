@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1dd4bdb7-609a-4a06-a441-b38b93b795a2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/pelican-plugins/tipue_search/tipue_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pelican-plugins/tipue_search/tipue_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/templates/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/css/tipue_search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/img/profile_photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/ipynb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/js/custom.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+            <state relative-caret-position="590">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
             </state>
           </provider>
         </entry>
@@ -28,17 +32,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output/articles/2019/01/03/uncertainty-modeling-with-monte-carlo-simulation/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41232">
-              <caret line="2541" column="28" selection-start-line="2541" selection-start-column="28" selection-end-line="2541" selection-end-column="28" />
+            <state relative-caret-position="-29257">
+              <caret line="1440" column="6" selection-start-line="1440" selection-start-column="6" selection-end-line="1440" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tipue_search.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/pelican-plugins/tipue_search/tipue_search.py">
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/theme/templates/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="48">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -46,35 +50,8 @@
       <file leaf-file-name="pelicanconf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pelicanconf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/templates/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tipuesearch_content.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/output/tipuesearch_content.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret column="423" selection-start-column="423" selection-end-column="423" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/templates/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+            <state relative-caret-position="176">
+              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -91,8 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-awesome</find>
-      <find>before</find>
       <find>.jpg</find>
       <find>Sep</find>
       <find>col-md-4</find>
@@ -121,6 +96,8 @@
       <find>tipue_search_content</find>
       <find>CSS font</find>
       <find>search_content</find>
+      <find>tipuesearch_content</find>
+      <find>ipynb.css</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\EricKim\Documents\aegis4048.github.io-source\content\downloads</dir>
@@ -146,11 +123,12 @@
         <option value="$PROJECT_DIR$/theme/templates/index.html" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
         <option value="$PROJECT_DIR$/theme/templates/js/custom.js" />
-        <option value="$PROJECT_DIR$/theme/templates/base.html" />
         <option value="$PROJECT_DIR$/theme/templates/archives.html" />
         <option value="$PROJECT_DIR$/theme/templates/css/custom.css" />
         <option value="$PROJECT_DIR$/output/tipuesearch_content.json" />
         <option value="$PROJECT_DIR$/plugins/pelican-plugins/tipue_search/tipue_search.py" />
+        <option value="$PROJECT_DIR$/theme/templates/article.html" />
+        <option value="$PROJECT_DIR$/theme/templates/base.html" />
       </list>
     </option>
   </component>
@@ -163,7 +141,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1905" />
     <option name="width" value="1948" />
     <option name="height" value="2175" />
@@ -185,53 +163,25 @@
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="01" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-              <item name="uncertainty-modeling-with-monte-carlo-simulation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="author" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
@@ -241,40 +191,7 @@
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="pelican-plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="pelican-plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="tipue_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
               <item name="theme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,7 +253,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="779" height="870" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -345,9 +263,10 @@
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.022880215" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18309858" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.34535366" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -358,7 +277,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/templates/page.html" />
     <entry file="file://$PROJECT_DIR$/theme/templates/tag.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -636,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -664,17 +568,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/tipuesearch_content.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret column="423" selection-start-column="423" selection-end-column="423" />
         </state>
       </provider>
     </entry>
@@ -685,24 +589,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/output/articles/2019/01/03/uncertainty-modeling-with-monte-carlo-simulation/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41232">
-          <caret line="2541" column="28" selection-start-line="2541" selection-start-column="28" selection-end-line="2541" selection-end-column="28" />
+        <state relative-caret-position="-29257">
+          <caret line="1440" column="6" selection-start-line="1440" selection-start-column="6" selection-end-line="1440" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/tipuesearch_content.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret column="423" selection-start-column="423" selection-end-column="423" />
+        <state relative-caret-position="590">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
         </state>
       </provider>
     </entry>
