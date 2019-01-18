@@ -10,15 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://jakevdp.github.io'
+SITEURL = 'https://aegis4048.github.io'
 RELATIVE_URLS = False
+SOCIAL = (('Github', 'https://github.com/Pelican-Elegant/'), ('RSS', SITEURL + '/feeds/all.atom.xml'))
 
-SHOW_FEED = True
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-FEED_USE_SUMMARY = True  # from the feed_summary plugin
-
-DELETE_OUTPUT_DIRECTORY = True
-
-DISQUS_SITENAME = "pythonicperambulations"
-GOOGLE_ANALYTICS = "UA-34061646-1"
+DELETE_OUTPUT_DIRECTORY = False
