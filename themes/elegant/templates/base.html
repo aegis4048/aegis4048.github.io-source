@@ -49,7 +49,6 @@
             {% if 'assets' in PLUGINS %}
                 {% include '_includes/minify_css.html' with context %}
             {% else %}
-
                 <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
                 <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/ipynb.css" media="screen">
             {% endif %}
@@ -62,22 +61,16 @@
                 }
             </style>
         {% endblock head_links %}
-
-
         {% include '_includes/favicon_links.html' %}
-
         {% block feed_links %}
             {% include '_includes/feeds.html' %}
         {% endblock feed_links %}
-
         {% include '_includes/analytics.html' %}
     </head>
     <body>
-
         {% if INCLUDE_PROGRESSBAR %}
             {% include '_includes/progressbar.html' %}
         {% endif %}
-
         <div class="banner-wrapper row" style="background-color: #24292e;">
             <div class="banner">
                 <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light container">

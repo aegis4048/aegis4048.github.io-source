@@ -1,0 +1,3 @@
+[submodule "output"]
+	path = output
+	url = https://github.com/aegis4048/aegis4048.github.io.git
