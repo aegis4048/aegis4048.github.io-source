@@ -217,3 +217,7 @@ TECH_STACKS_LEFT, TECH_STACKS_RIGHT = process_techstacks(TECH_STACKS, NUM_MAX_ST
 ##################################################################################################################
 
 PORT = 8090
+
+# git submodule add https://github.com/aegis4048/aegis4048.github.io.git output
+# git rm --cached output
+# rm -rf .git/modules/output
