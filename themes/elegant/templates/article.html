@@ -47,9 +47,7 @@
             {{ translations.translations_for(article) }}
             {{ article.content }}
         </div>
-        {% include '_includes/disqus_thread.html' %}
         <hr/>
-        {% include '_includes/related_posts.html' with context %}
         {% if article.prev_article or article.next_article %}
         <aside>
         <nav>
@@ -76,10 +74,9 @@
         </nav>
         </aside>
         {% endif %}
+        {% include '_includes/disqus_thread.html' %}
+        <hr/>
+        {% include '_includes/related_posts.html' with context %}
     </article>
 </div>
 {% endblock content %}
-
-{% block script %}
-    {{ super() }}
-{% endblock script %}
