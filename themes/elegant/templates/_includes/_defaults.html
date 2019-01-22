@@ -90,6 +90,12 @@ search results and social media #}
 {% else %}
 {% set SITE_DESCRIPTION = SITE_DESCRIPTION %}
 {% endif %}
+{% if not ABOUT_PAGE_DESCRIPTION %}
+{% set ABOUT_PAGE_DESCRIPTION = '' %}
+{% else %}
+{% set ABOUT_PAGE_DESCRIPTION = ABOUT_PAGE_DESCRIPTION %}
+{% endif %}
+
 
 {# Mailchimp form action URL. This value is mandatory, to show subscriber form
 #}

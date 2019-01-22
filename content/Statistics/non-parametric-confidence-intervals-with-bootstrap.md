@@ -6,7 +6,7 @@ Comments: true
 Disqus_identifier: 
 Subtitle:
 Keywords: 
+Social_Media_Description: One great thing about Bootstrapping is that it is distribution-free. The fact that Bootstrapping does not depend on a type of distribution leads to another great advantage - It can calculate uncertainty in any confidence interval of any kind of distribution.
 Summary: {% notebook downloads/notebooks/Non-ParametricConfidenceIntervalswithBootstrap.ipynb cells[1:2] %}
-Social_Media_Description: this is a test
 
 {% notebook downloads/notebooks/Non-ParametricConfidenceIntervalswithBootstrap.ipynb cells[:] %}
