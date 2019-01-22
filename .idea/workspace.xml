@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcc2aba-be5d-4bef-98ec-eeeeac121be4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output" beforeDir="false" afterPath="$PROJECT_DIR$/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/elegant/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/_includes/related_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/templates/_includes/related_posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/templates/article.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/elegant/templates/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+            <state relative-caret-position="307">
+              <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
               <folding>
                 <element signature="e#2151#3571#0#HTML" />
               </folding>
@@ -74,8 +72,20 @@
       <file leaf-file-name="disqus_thread.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <state>
+              <caret column="66" selection-start-column="66" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="non-parametric-confidence-intervals-with-bootstrap.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="48">
+                <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -93,27 +103,27 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;meta name=&quot;description</find>
-      <find>Live demonstra</find>
+      <find />
+      <find />
       <find>talha</find>
-      <find>Talha M</find>
+      <find />
       <find>originally</find>
       <find>LANDING_PAGE</find>
       <find>smo</find>
       <find>url</find>
       <find>facebook</find>
-      <find>'Full Archives of Pythonic Excursions'</find>
+      <find />
       <find>share</find>
       <find>https://github.com/aegis4048/Petroleum_Engineering/blob/master/Data%20Analysis/img/confidence_interval_of_mean_demo.png?raw=true</find>
       <find>raw=true</find>
       <find>FEATURED_IMAGE</find>
-      <find>Search</find>
-      <find>search results for</find>
-      <find>That page doesn't</find>
-      <find>var disqus_config</find>
+      <find />
+      <find />
+      <find />
+      <find />
       <find>disqus_thread</find>
       <find>https://disqus.com/?ref_noscript</find>
-      <find>logo crea</find>
+      <find />
       <find>disqus_shortname</find>
       <find>S.SRC</find>
       <find>fea</find>
@@ -160,13 +170,13 @@
         <option value="$PROJECT_DIR$/themes/elegant/templates/about.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/comments.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_scripts.html" />
-        <option value="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" />
         <option value="$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html" />
         <option value="$PROJECT_DIR$/themes/elegant/static/css/custom.css" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/related_posts.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/article.html" />
+        <option value="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" />
       </list>
     </option>
   </component>
@@ -217,43 +227,8 @@
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="elegant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="elegant" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="elegant" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="elegant" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="elegant" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="Statistics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,8 +327,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.39434725" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.33152175" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.39945653" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.6699029" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.29483697" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.592233" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.5047106" />
@@ -368,29 +343,6 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.62374246" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.32880434" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.33152175" />
-      <window_info anchor="bottom" id="Python Console" order="3" weight="0.39434725" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.5047106" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.028263796" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="0" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39973083" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -688,16 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="112">
-            <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -712,13 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -748,11 +683,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/elegant/templates/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        <state relative-caret-position="307">
+          <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
           <folding>
             <element signature="e#2151#3571#0#HTML" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="66" selection-start-column="66" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
