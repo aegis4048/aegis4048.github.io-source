@@ -6,7 +6,7 @@ Comments: true
 Disqus_identifier: 
 Subtitle:
 Keywords: 
-Social_Media_Description: 
+Social_Media_Description: How do casinos earn money? The answer is simple - the longer you play, the bigger the chance of you losing money. Monte-Carlo simulation can construct its profit forecast model
 Summary: {% notebook downloads/notebooks/UncertaintyModelingWithMonte-CarloSimulation.ipynb cells[1:2] %}
         
 {% notebook downloads/notebooks/UncertaintyModelingWithMonte-CarloSimulation.ipynb cells[:] %}
