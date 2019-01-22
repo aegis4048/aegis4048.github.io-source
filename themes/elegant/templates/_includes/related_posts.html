@@ -1,6 +1,6 @@
 {% if article.related_posts %}
 {% from '_includes/_defaults.html' import RELATED_POSTS_LABEL with context %}
-<section>
+<section style="margin-top: 30px">
     <h2>{{ RELATED_POSTS_LABEL }}</h2>
 <ul class="related-posts-list">
 {% for related_post in article.related_posts|sort(attribute = 'date') %}
@@ -13,7 +13,6 @@
 <li><a href="{{ SITEURL }}/{{ related_post.url }}" title="{{ title }}">{{ v_title }}</a></li>
 {% endfor %}
 </ul>
-<hr />
 </section>
 {% endif %}
 
