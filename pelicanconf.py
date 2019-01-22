@@ -171,6 +171,11 @@ ARCHIVE_PAGE_DESCRIPTION = 'Full Archives of Pythonic Excursions'
 INDEX_PAGE_TITLE = 'Pythonic Excursions'
 INDEX_PAGE_DESCRIPTION = u'Stories About Python and Data Science | by Eric Kim'
 
+### social media share debugger
+# Twitter: https://cards-dev.twitter.com/validator
+# Facebook: https://developers.facebook.com/tools/debug/
+
+
 ##############################################################################
 
 FOOTER_TITLE = 'ABOUT ERIC'
@@ -184,6 +189,7 @@ COPYRIGHT_NOTICE = 'Handcrafted by me @2018'
 INCLUDE_PROGRESSBAR = True
 PROGRESSBAR_COLOR = '#24292e'
 
+DISQUS_SITENAME = "pythonic-excursions"
 
 # turn off typografy. otherwise the codes in Jupyter won't properly be highlighted
 
