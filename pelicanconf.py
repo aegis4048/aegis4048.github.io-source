@@ -171,8 +171,6 @@ ARCHIVE_PAGE_DESCRIPTION = 'Full Archives of Pythonic Excursions'
 INDEX_PAGE_TITLE = 'Pythonic Excursions'
 INDEX_PAGE_DESCRIPTION = u'Technical blog for Python and Data Science | by Eric Kim'
 
-
-
 ##############################################################################
 
 FOOTER_TITLE = 'ABOUT ERIC'

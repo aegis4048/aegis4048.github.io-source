@@ -21,9 +21,6 @@
 {% endblock meta_tags_in_head %}
 
 {% block content %}
-
-    {% from '_includes/_defaults.html' import LANDING_PAGE_ABOUT with context %}
-    {% from '_includes/_defaults.html' import PROJECTS with context %}
     <div class="col masthead" align="center" style="background-image: url('{{ SITEURL }}/{{ INDEX_BANNER_IMAGE }}')">
         <h1>{{ SITENAME }}</h1>
         <h5>{{ SITESUBTITLE }}</h5>
