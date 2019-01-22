@@ -15,13 +15,13 @@
     <meta name="twitter:title" content="{{ article.title|striptags|e }} | {{ SITENAME|striptags|e }}">
     <meta name="twitter:description" content="{{ article.social_media_description|striptags|e }}">
     {% if article.featured_image %}
-        <meta property="og:image" content="{{article.featured_image}}" />
-        <meta name="twitter:image" content="{{article.featured_image}}" >
+        <meta property="og:image" content="{{ SITEURL }}/{{ article.featured_image }}" />
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ article.featured_image }}" >
     {% else %}
         {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
         {% if FEATURED_IMAGE %}
             <meta property="og:image" content="{{ FEATURED_IMAGE }}" />
-            <meta name="twitter:image" content="{{ FEATURED_IMAGE }}" >
+            <meta name="twitter:image" content="{{ FEATURED_IMAGE }}"/>
         {% endif %}
     {% endif %}
 {% endmacro %}

@@ -5,13 +5,13 @@
 {% endblock title %}
 
 {% block head_description %}
-    Search results for {{ SITENAME|striptags|e }} blog.
+    Search results
 {% endblock head_description %}
 
 {% block meta_tags_in_head %}
     {{ super() }}
-    <meta property="og:title" content="Search · {{ SITENAME|striptags|e }}"/>
-    <meta name="twitter:title" content="Search · {{ SITENAME|striptags|e }}">
+    <meta property="og:title" content="Search | {{ SITENAME|striptags|e }}"/>
+    <meta name="twitter:title" content="Search | {{ SITENAME|striptags|e }}">
     <meta property="og:url" content="{{ SITEURL }}/search.html" />
     <meta property="og:description" content="Search results for {{ SITENAME|striptags|e }} blog" />
     <meta name="twitter:description" content="Search results for {{ SITENAME|striptags|e }} blog">
