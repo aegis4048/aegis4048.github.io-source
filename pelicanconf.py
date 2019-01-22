@@ -7,7 +7,7 @@ AUTHOR_SHORTENED = 'Eric'
 AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
-SITEURL = '/'
+SITEURL = 'https://aegis4048.github.io'
 
 # Regional Settings
 TIMEZONE = 'America/Los_Angeles'
@@ -114,10 +114,7 @@ FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
 # Legal
 SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license" 
     href="http://creativecommons.org/licenses/by/4.0/">
-    Creative Commons Attribution 4.0 International License</a>.""" 
-
-# SEO
-SITE_DESCRIPTION = u'Documentation website for Pelican-Elegant theme originally created by Talha Mansoor'
+    Creative Commons Attribution 4.0 International License</a>."""
 
 # Landing Page
 PROJECTS = [
@@ -133,13 +130,6 @@ PROJECTS = [
     }
 ]
 
-LANDING_PAGE_ABOUT = {
-    'title': 'Live demonstration and documentation of Pelican-Elegant Theme',
-    'details': """<p>This page serves both as documentation site and demonstration of Pelican-Elegant theme 
-        capabilities and look&amp;feel.</p><p>Please do check our Project pages and browse this site for more information.
-        </p>"""
-}
-
 # for liquid tags
 CODE_DIR = 'downloads/code'
 NOTEBOOK_DIR = 'downloads/notebooks'
@@ -150,11 +140,10 @@ ENABLE_MATHJAX = True
 
 # files are actually saved in /themes/elegant/static/img/, but its copied to /output/theme/img/.
 # just store any meta files in /themes/elegant/static/, and you are good.
-# logo created at "https://vectr.com/"
-LOGO_WITH_SUBTITLE = "theme/img/logo_with_subtitle.svg"
 PROFILE_PHOTO_FOOTER = "theme/img/profile_photo_footer.jpg"
 PROFILE_PHOTO_ABOUT = "theme/img/profile_photo_about.jpg"
 INDEX_BANNER_IMAGE = "theme/img/index_banner_image.jpg"
+LOGO_WITH_SUBTITLE = "theme/img/logo_with_subtitle.svg"  # logo created at "https://vectr.com/"
 
 # actually located in 'content/downloads/misc/'. Files in 'content/downloads' will be copied into 'output/downloads' to
 # auto-generate html href link.
@@ -166,6 +155,25 @@ LINKEDIN_LINK = 'https://www.linkedin.com/in/eric-kim-34318811b/'
 
 ABOUT_PAGE = 'about.html'
 ARCHIVE_PAGE = 'archives.html'
+
+
+############################ Social Media Shares ############################
+
+# About Page
+ABOUT_PAGE_TITLE = 'About Eric'
+ABOUT_PAGE_DESCRIPTION = 'Pythonic Thinker & Solver, Petroleum Engineer'
+
+# Archive Page
+ARCHIVE_PAGE_TITLE = 'Archive'
+ARCHIVE_PAGE_DESCRIPTION = 'Full Archives of Pythonic Excursions'
+
+# landing(index) page description
+INDEX_PAGE_TITLE = 'Pythonic Excursions'
+INDEX_PAGE_DESCRIPTION = u'Technical blog for Python and Data Science | by Eric Kim'
+
+
+
+##############################################################################
 
 FOOTER_TITLE = 'ABOUT ERIC'
 TEXT_FOOTER = 'Senior undergraduate student at the Univeristy of Texas at Austin, Hildebrand Department of Petroleum ' \

@@ -10,11 +10,11 @@
 
 {% block meta_tags_in_head %}
     {{ super() }}
-    <meta property="og:title" content="All Posts | {{ SITENAME|striptags|e }}"/>
-    <meta name="twitter:title" content="All Posts | {{ SITENAME|striptags|e }}"/>
+    <meta property="og:title" content="{{ ARCHIVE_PAGE_TITLE }} | {{ SITENAME|striptags|e }}"/>
+    <meta name="twitter:title" content="{{ ARCHIVE_PAGE_TITLE }} | {{ SITENAME|striptags|e }}"/>
     <meta property="og:url" content="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives') }}" />
-    <meta property="og:description" content="Full archives of {{ SITENAME|striptags|e }}" />
-    <meta name="twitter:description" content="Full archives of {{ SITENAME|striptags|e }}"/>
+    <meta property="og:description" content="{{ ARCHIVE_PAGE_DESCRIPTION }}" />
+    <meta name="twitter:description" content="{{ ARCHIVE_PAGE_DESCRIPTION }}"/>
     <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
     <meta property="og:article:author" content="{{ AUTHOR }}" />
     {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
