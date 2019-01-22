@@ -1,3 +1,5 @@
+<!-- modified by Eric Kim -->
+
 {% macro share_links(article) %}
     {% if article.share_post and article.status != 'draft' %}
 <section>
@@ -5,13 +7,13 @@
         <div class="share-post-intro mr-2">{{ SHARE_POST_INTRO }}</div>
         <div class="social-share-btns-container">
             <div class="social-share-btns">
-                <a class="share-btn share-btn-twitter" href="{{article.share_post['twitter']}}" rel="nofollow" target="_blank">
+                <a class="share-btn share-btn-twitter" href="https://twitter.com/home?status={{ SITEURL }}/{{ article.url }}" rel="nofollow" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a class="share-btn share-btn-facebook" href="{{article.share_post['facebook']}}" rel="nofollow" target="_blank">
+                <a class="share-btn share-btn-facebook" href="http://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url }}" rel="nofollow" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a class="share-btn share-btn-linkedin" href="{{article.share_post['linkedin']}}" rel="nofollow" target="_blank">
+                <a class="share-btn share-btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ SITEURL }}/{{ article.url }}" rel="nofollow" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
