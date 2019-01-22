@@ -15,8 +15,8 @@
     <meta property="og:article:author" content="{{ AUTHOR }}" />
     {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
     {% if FEATURED_IMAGE %}
-        <meta property="og:image" content="{{FEATURED_IMAGE}}" />
-        <meta name="twitter:image" content="{{FEATURED_IMAGE}}"/>
+        <meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+        <meta name="twitter:image" content="{{ FEATURED_IMAGE }}"/>
     {% endif %}
 {% endblock meta_tags_in_head %}
 

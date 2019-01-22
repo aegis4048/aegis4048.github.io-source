@@ -109,7 +109,7 @@ MAILCHIMP_FORM_ACTION = u'empty'
 
 # SMO
 TWITTER_USERNAME = u''
-FEATURED_IMAGE = SITEURL + '/theme/images/apple-touch-icon-152x152.png'
+FEATURED_IMAGE = SITEURL + '/theme/images/logo_icon_background.png'
 
 # Legal
 SITE_LICENSE = """Elegant theme documentation is licensed under a <a rel="license" 
@@ -169,7 +169,7 @@ ARCHIVE_PAGE_DESCRIPTION = 'Full Archives of Pythonic Excursions'
 
 # landing(index) page description
 INDEX_PAGE_TITLE = 'Pythonic Excursions'
-INDEX_PAGE_DESCRIPTION = u'Technical blog for Python and Data Science | by Eric Kim'
+INDEX_PAGE_DESCRIPTION = u'Stories About Python and Data Science | by Eric Kim'
 
 ##############################################################################
 
