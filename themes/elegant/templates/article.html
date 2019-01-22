@@ -47,8 +47,7 @@
             {{ translations.translations_for(article) }}
             {{ article.content }}
         </div>
-        {% from '_includes/comments.html' import comments with context %}
-        {{ comments(article) }}
+        {% include '_includes/disqus_thread.html' %}
         <hr/>
         {% include '_includes/related_posts.html' with context %}
         {% if article.prev_article or article.next_article %}
@@ -83,6 +82,4 @@
 
 {% block script %}
     {{ super() }}
-    {% from '_includes/comments.html' import comments_script with context %}
-    {{ comments_script(article) }}
 {% endblock script %}

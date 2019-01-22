@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dcc2aba-be5d-4bef-98ec-eeeeac121be4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pelicanconf.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output" beforeDir="false" afterPath="$PROJECT_DIR$/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/test_data/themes/notmyidea/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/test_data/themes/notmyidea/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/_includes/comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/elegant/templates/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/elegant/templates/page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,47 +34,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smo_metadata.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/smo_metadata.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pelicanconf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pelicanconf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
+            <state relative-caret-position="88">
+              <caret line="187" selection-start-line="187" selection-end-line="187" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/elegant/templates/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+            <state relative-caret-position="150">
+              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="disqus_scripts.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_scripts.html">
+      <file leaf-file-name="disqus_thread.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/comments.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="256">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -86,8 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ARCHIVE_PAGE</find>
-      <find>LANDING_PAGE_ABOUT</find>
       <find>ABOUT_DESCRIPTION</find>
       <find>&lt;meta name=&quot;description</find>
       <find>Live demonstra</find>
@@ -112,10 +98,12 @@
       <find>logo crea</find>
       <find>disqus_shortname</find>
       <find>S.SRC</find>
-      <find>s</find>
       <find>fea</find>
+      <find>s</find>
+      <find>disqus_identifier</find>
       <find>FEATURED</find>
       <find>disqus</find>
+      <find>comments.html</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,7 +125,6 @@
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/favicon_links.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/tags.html" />
         <option value="$PROJECT_DIR$/content/Analytics/stat-counter-google-analytics.md" />
-        <option value="$PROJECT_DIR$/themes/elegant/templates/article.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/tag.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/minify_css.html" />
         <option value="$PROJECT_DIR$/publishconf.py" />
@@ -152,10 +139,14 @@
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/share_links.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/search.html" />
         <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/smo_metadata.html" />
+        <option value="$PROJECT_DIR$/themes/elegant/templates/about.html" />
+        <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/comments.html" />
+        <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_scripts.html" />
         <option value="$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md" />
         <option value="$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md" />
-        <option value="$PROJECT_DIR$/themes/elegant/templates/about.html" />
+        <option value="$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
+        <option value="$PROJECT_DIR$/themes/elegant/templates/article.html" />
       </list>
     </option>
   </component>
@@ -168,7 +159,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1905" />
     <option name="width" value="1948" />
     <option name="height" value="2175" />
@@ -201,19 +192,7 @@
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
               <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="downloads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="extra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="Statistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
@@ -232,6 +211,14 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="elegant" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aegis4048.github.io-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aegis4048.github.io-source" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="elegant" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,8 +309,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="762" y="0" width="779" height="870" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32880434" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
@@ -331,8 +317,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.39434725" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.33152175" />
-      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.25975773" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.30181086" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3763587" />
+      <window_info content_ui="combo" id="Project" order="1" weight="1.0" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.5047106" />
@@ -347,6 +333,29 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.62374246" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32880434" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.33152175" />
+      <window_info anchor="bottom" id="Python Console" order="3" weight="0.39434725" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.5047106" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.028263796" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="0" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39973083" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -360,13 +369,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/minify_tipuesearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/elegant/static/css/ipynb.css.ipynb" />
     <entry file="file://$PROJECT_DIR$/output/theme/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -620,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/non-parametric-confidence-intervals-with-bootstrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="1339" column="66" selection-start-line="1339" selection-start-column="66" selection-end-line="1339" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/elegant/templates/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -644,33 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="256">
-            <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="112">
-            <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/comments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/smo_metadata.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -685,24 +653,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+    <entry file="file://$PROJECT_DIR$/output/non-parametric-confidence-intervals-with-bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
+        <state relative-caret-position="241">
+          <caret line="8953" column="17" lean-forward="true" selection-start-line="8953" selection-start-column="17" selection-end-line="8953" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/article.html">
+    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/comments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        <state relative-caret-position="448">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/Statistics/non-parametric-confidence-intervals-with-bootstrap.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="112">
+            <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/Statistics/uncertainty-modeling-with-monte-carlo-simulation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="64">
+            <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_scripts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="220">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/_includes/disqus_thread.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elegant/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
     </entry>
