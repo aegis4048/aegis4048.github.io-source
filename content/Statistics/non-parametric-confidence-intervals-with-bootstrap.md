@@ -11,3 +11,5 @@ Social_Media_Description: Bootstrapping can calculate uncertainty in any confide
 Summary: {% notebook downloads/notebooks/Non-ParametricConfidenceIntervalswithBootstrap.ipynb cells[1:2] %}
 
 {% notebook downloads/notebooks/Non-ParametricConfidenceIntervalswithBootstrap.ipynb cells[:] %}
+
+
