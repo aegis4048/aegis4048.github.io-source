@@ -28,14 +28,6 @@
         {% endif %}
 
         {% block meta_tags_in_head %}
-            {% from '_includes/_defaults.html' import GOOGLE_PLUS_PROFILE_URL with context %}
-            {% if GOOGLE_PLUS_PROFILE_URL %}
-               <link rel="author" href={{GOOGLE_PLUS_PROFILE_URL}} />
-            {% endif %}
-            {% from '_includes/_defaults.html' import TWITTER_USERNAME with context %}
-            {%if TWITTER_USERNAME %}
-                <meta name="twitter:creator" content="@{{TWITTER_USERNAME}}">
-            {% endif %}
             <meta property="og:type" content="article" />
             <meta name="twitter:card" content="summary"/>
         {% endblock meta_tags_in_head %}
@@ -45,7 +37,6 @@
         {% block head_links %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
             {% if 'assets' in PLUGINS %}
                 {% include '_includes/minify_css.html' with context %}
             {% else %}
@@ -63,7 +54,7 @@
         {% endblock head_links %}
         {% include '_includes/favicon_links.html' %}
         {% block feed_links %}
-            {% include '_includes/feeds.html' %}
+        {% include '_includes/feeds.html' %}
         {% endblock feed_links %}
         {% include '_includes/analytics.html' %}
     </head>
