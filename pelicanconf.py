@@ -85,7 +85,7 @@ CLAIM_GOOGLE = "ZsWFnpirKDgtbmwb1YRymDnSfvnUrpzCbf6LD1F_4TY"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
 STATIC_PATHS = ['figures', 'downloads', 'images',]
-DIRECT_TEMPLATES = (('index', 'archives', 'search', '404', 'about'))
+DIRECT_TEMPLATES = (('index', 'archives', 'search', 'about'))
 AUTHOR_SAVE_AS = ''
 USE_SHORTCUT_ICONS = True
 
@@ -94,7 +94,7 @@ RELATED_POSTS_LABEL = 'Related Posts'       # articles that share common tags
 SHARE_POST_INTRO = 'Share This Post :'
 
 # SMO
-FEATURED_IMAGE = SITEURL + '/theme/images/logo_icon_background.png'
+FEATURED_IMAGE = SITEURL + '/theme/img/logo_icon_background.png'
 
 # for liquid tags
 CODE_DIR = 'downloads/code'
