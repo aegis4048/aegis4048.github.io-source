@@ -8,7 +8,7 @@ AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
 SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'
-SITEURL = 'https://aegis4048.github.io'
+SITEURL = ''
 
 # Regional Settings
 TIMEZONE = 'America/Los_Angeles'
@@ -85,7 +85,7 @@ CLAIM_GOOGLE = "ZsWFnpirKDgtbmwb1YRymDnSfvnUrpzCbf6LD1F_4TY"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
 STATIC_PATHS = ['figures', 'downloads', 'images',]
-DIRECT_TEMPLATES = (('index', 'archives', 'search', 'about'))
+DIRECT_TEMPLATES = (('index', 'archives', 'search', '404', 'about'))
 AUTHOR_SAVE_AS = ''
 USE_SHORTCUT_ICONS = True
 
