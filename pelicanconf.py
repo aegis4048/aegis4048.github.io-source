@@ -7,6 +7,7 @@ AUTHOR_SHORTENED = 'Eric'
 AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
+SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'
 SITEURL = 'https://aegis4048.github.io'
 
 # Regional Settings
@@ -57,7 +58,7 @@ SITEMAP = {
         'pages': 0.5
     },
     'changefreqs': {
-        'articles': 'monthly',
+        'articles': 'hourly',
         'indexes': 'daily',
         'pages': 'monthly'
     }
@@ -120,6 +121,9 @@ LINKEDIN_LINK = 'https://www.linkedin.com/in/eric-kim-34318811b/'
 ABOUT_PAGE = 'about.html'
 ARCHIVE_PAGE = 'archives.html'
 
+# when developing offline, set it as False.
+USE_CDN = False
+
 
 ############################ Social Media Shares ############################
 
@@ -152,8 +156,6 @@ COPYRIGHT_NOTICE = 'Handcrafted by me @2018'
 
 INCLUDE_PROGRESSBAR = True
 PROGRESSBAR_COLOR = '#24292e'
-
-DISQUS_SITENAME = "pythonic-excursions"
 
 # turn off typografy. otherwise the codes in Jupyter won't properly be highlighted
 
@@ -191,3 +193,7 @@ PORT = 8090
 # git submodule add https://github.com/aegis4048/aegis4048.github.io.git output
 # git rm --cached output
 # rm -rf .git/modules/output
+
+
+DISQUS_SITENAME = "pythonic-excursions"
+GOOGLE_ANALYTICS = "UA-133310548-1"
