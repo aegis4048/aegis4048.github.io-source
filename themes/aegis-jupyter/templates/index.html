@@ -6,6 +6,7 @@
 
 {% block meta_tags_in_head %}
     {{ super() }}
+    <link rel="canonical" href="{{ SITEURL }}">
     <meta property="og:title" content="{{ INDEX_PAGE_TITLE }}"/>
     <meta name="twitter:title" content="{{ INDEX_PAGE_TITLE }}"/>
     <meta property="og:url" content="{{ SITEURL }}" />

@@ -10,6 +10,7 @@
 
 {% block meta_tags_in_head %}
     {{ super() }}
+    <link rel="canonical" href="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives') }}">
     <meta property="og:title" content="{{ ARCHIVE_PAGE_TITLE }} | {{ SITENAME|striptags|e }}"/>
     <meta name="twitter:title" content="{{ ARCHIVE_PAGE_TITLE }} | {{ SITENAME|striptags|e }}"/>
     <meta property="og:url" content="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives') }}" />
