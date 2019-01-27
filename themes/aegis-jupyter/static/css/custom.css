@@ -684,7 +684,6 @@ div.output_area .rendered_html table {
     content: none;
 }
 .alert {
-    box-shadow: 0 0 0 1px #a9d5de inset, 0 0 0 0 transparent;
     color: #276f86;
 }
 
@@ -1366,7 +1365,6 @@ ul.ascii h1 {
 ul.ascii h2 {
     font-size: 1.25em;
 }
-
 ul.ascii, ul.ascii ul {
     margin-left: 0;
     padding-left: 0 !important;
@@ -1377,6 +1375,7 @@ ul.ascii li {
     margin: 0;
     padding: 0;
     line-height: unset !important;
+    word-wrap: break-word;
 }
 
 /* level 1 */
