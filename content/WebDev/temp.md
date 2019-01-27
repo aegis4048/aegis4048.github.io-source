@@ -1,4 +1,4 @@
-Title: Creating a JupyterNotebook-Powered Data Science Blog with Pelican
+Title: Creating a Jupyter Notebook-Powered Data Science Blog with Pelican
 Tags: web-dev, pelican, jupyter, 
 Date: 2019-01-27 09:00
 Slug: creating-a-jupyternotebook-powered-data-science-blog-with-pelican

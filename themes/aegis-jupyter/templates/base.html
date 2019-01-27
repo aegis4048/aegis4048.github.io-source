@@ -54,6 +54,8 @@
             </style>
         {% endblock head_links %}
 
+        <link href="{{ SITEURL }}/theme/libs/prism.css" rel="stylesheet" />
+
         {% include '_includes/favicon_links.html' %}
         {% block feed_links %}
         {% include '_includes/feeds.html' %}
@@ -105,6 +107,9 @@
             <script type="text/javascript" src="{{ SITEURL }}/theme/libs/jquery.min.js"></script>
             <script type="text/javascript" src="{{ SITEURL }}/theme/libs/bootstrap-4.2.1/dist/js/bootstrap.bundle.min.js"></script>
         {% endif %}
+
+        <script src="{{ SITEURL }}/theme/libs/prism.js"></script>
+
         <script type="text/javascript" src="{{ SITEURL }}/theme/js/custom.js"></script>
         {% block script %}
             <script>
