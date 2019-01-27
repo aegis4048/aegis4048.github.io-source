@@ -865,8 +865,7 @@ ul.no-bullets {
 /* 404 */
 
 #notfound {
-  position: relative;
-  height: 60vh;
+    height: 60vh;
     margin-bottom: -3rem;
 }
 
