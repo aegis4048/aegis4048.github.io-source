@@ -2,8 +2,6 @@ Title: Uncertainty Modeling with Monte-Carlo Simulation
 Tags: monte-carlo-simulation, statistics, uncertainty-modeling, prediction-interval
 Date: 2019-01-03 09:00
 Slug: uncertainty-modeling-with-monte-carlo-simulation
-Comments: true
-Disqus_identifier: uncertainty-modeling-with-monte-carlo-simulation
 Subtitle:
 Keywords:
 Featured_Image: images/featured_images/monte-carlo.png 
