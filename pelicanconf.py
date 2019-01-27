@@ -8,7 +8,7 @@ AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
 SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'
-SITEURL = 'https://aegis4048.github.io'
+SITEURL = ''
 
 # Regional Settings
 TIMEZONE = 'America/Los_Angeles'
@@ -194,5 +194,5 @@ PORT = 8090
 # rm -rf .git/modules/output
 
 
-DISQUS_SITENAME = "pythonic-excursions"
+# DISQUS_SITENAME = "pythonic-excursions"
 GOOGLE_ANALYTICS = "UA-133310548-1"
