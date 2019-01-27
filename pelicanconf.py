@@ -8,7 +8,7 @@ AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
 SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'
-SITEURL = ''
+SITEURL = 'https://aegis4048.github.io'
 
 # Regional Settings
 TIMEZONE = 'America/Los_Angeles'
@@ -37,7 +37,6 @@ PLUGINS = ['sitemap',
            'neighbors',
            'render_math',
            'related_posts',
-           'assets',
            'share_post',
            'series',
            'tipue_search',

@@ -1,0 +1,4 @@
+pelican==4.0.1
+Markdown==3.0.1
+jupyter==1.0.0
+bs4==0.0.1
