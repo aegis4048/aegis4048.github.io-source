@@ -51,7 +51,7 @@ function check_width() {
         $('.admonition-image').css('max-width', '100%')
     }
     else {
-        $('.admonition-image').css('max-width', '430px')
+        $('.admonition-image').css('max-width', '380px')
     }
 }
 function jupyter_css() {
