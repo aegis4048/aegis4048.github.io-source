@@ -64,7 +64,7 @@ SITEMAP = {
 }
 
 # Appearance
-THEME = 'themes/aegis-jupyter'
+THEME = 'themes/pelican-aegis-jupyter-theme'
 DEFAULT_PAGINATION = False
 
 # Defaults
