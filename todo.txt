@@ -1,3 +1,8 @@
 Metatags optimization for google search
 Google search caching, search console, claim google
 Google Analytics
+
+Jupyter Notebook pictures width - manually set: 430px
+
+
+Mobile support, Google Analytics, Social Media shares
