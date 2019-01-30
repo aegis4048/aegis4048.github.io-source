@@ -190,5 +190,5 @@ TECH_STACKS_LEFT, TECH_STACKS_RIGHT = process_techstacks(TECH_STACKS, NUM_MAX_ST
 PORT = 8090
 
 # git submodule add https://github.com/aegis4048/aegis4048.github.io.git output
-# git rm --cached themes/pelican-aegis-jupyter-theme
-# rm -rf .git/modules/themes/pelican-aegis-jupyter-theme
+# git rm --cached pelican-aegis-jupyter-theme -r
+# rm -rf .git/modules/pelican-aegis-jupyter-theme
