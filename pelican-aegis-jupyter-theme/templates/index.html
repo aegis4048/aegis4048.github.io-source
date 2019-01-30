@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }}
+{% endblock title %}
+
+{% block meta_tags_in_head %}
+    {{ super() }}
+    <link rel="canonical" href="{{ SITEURL }}">
+    <meta property="og:title" content="{{ INDEX_PAGE_TITLE }}"/>
+    <meta name="twitter:title" content="{{ INDEX_PAGE_TITLE }}"/>
+    <meta property="og:url" content="{{ SITEURL }}" />
+    <meta property="og:description" content="{{ INDEX_PAGE_DESCRIPTION }}" />
+    <meta name="twitter:description" content="{{ INDEX_PAGE_DESCRIPTION }}"/>
+    <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+    <meta property="og:article:author" content="{{ AUTHOR }}" />
+    {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+    {% if FEATURED_IMAGE %}
+        <meta property="og:image" content="{{FEATURED_IMAGE}}" />
+        <meta name="twitter:image" content="{{FEATURED_IMAGE}}"/>
+    {% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+    <div class="col masthead" align="center" style="background-image: url('{{ SITEURL }}/{{ INDEX_BANNER_IMAGE }}')">
+        <h1>{{ SITENAME }}</h1>
+        <h5>{{ SITESUBTITLE }}</h5>
+    </div>
+    <div id="post-container" class="container post index">
+        {% for article in articles_page.object_list %}
+            <article>
+                <header>
+                    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+                    <div class="row justify-content-between no-margin">
+                        <h4 class="article-category">Category > <a class="article-category-link" href="{{ SITEURL }}/{{ ARCHIVE_PAGE }}">{{ article.category }}</a></h4>
+                        <span class="article-date">{{ article.locale_date }}</span>
+                    </div>
+                    <div class="meta meta-tag no-margin no-border">
+                        <div>
+                            {% for tag in article.tags %}
+                                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </header>
+                <div class="article_content">
+                    {{ article.summary }}
+                </div>
+                <div class="meta no-margin">
+                    <div><a href="{{ SITEURL }}/{{ article.url }}" class="read_more">Read more &#8594;</a></div>
+                </div>
+            </article>
+            <div class="separator"></div>
+        {% endfor %}
+    <nav class="pagination row">
+        <div class="col-xs-6 left">
+            {% if articles_page.has_next() %}
+                <a class="prev" href="{{ SITEURL }}/{{ articles_next_page.url }}">&#8592; Past</a>
+            {% endif %}
+        </div>
+        <div class="col-xs-6 right">
+            {% if articles_page.has_previous() %}
+                <a class="next" href="{{ SITEURL }}/{{ articles_previous_page.url }}">Future &#8594;</a>
+            {% endif %}
+        </div>
+    </nav>
+    </div>
+{% endblock content %}

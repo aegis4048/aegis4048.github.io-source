@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Tag: | {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+    Tag: | {{ super() }}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="Tag | {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="Tag | {{ SITENAME|striptags|e }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ TAGS_URL|default('tags') }}" />
+<meta property="og:description" content="Tag: {{ tag }} in the {{ SITENAME|striptags|e }}" />
+<meta name="twitter:description" content="Tag: {{ tag }} in the {{ SITENAME|striptags|e }}">
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+{% if FEATURED_IMAGE %}
+<meta property="og:image" content="{{FEATURED_IMAGE}}" />
+<meta name="twitter:image" content="{{FEATURED_IMAGE}}" >
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+<div id="post-container" class="container post index list">
+    <article>
+        <div class="container list post">
+            <article>
+                <div class="h2 mt-3 title text-center mb-5">Tag: {{ tag }}</div>
+                <hr>
+                <ul class="double-list">
+                {% for article in articles %}
+                    <li>
+                        <a href='/{{ article.url }}'>
+                            <h2 class="tag-title">{{ article.title }}</h2>
+                            <span>{{ article.date.strftime('%d.%m.%Y') }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </article>
+        </div>
+    </article>
+</div>
+{% endblock %}

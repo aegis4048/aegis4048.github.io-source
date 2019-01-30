@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG | default("en-US") }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% if CLAIM_GOOGLE %}
+            <meta name="google-site-verification" content="{{ CLAIM_GOOGLE }}" />
+        {% endif %}
+
+        {% if CLAIM_BING %}
+            <meta name="msvalidate.01" content="{{ CLAIM_BING }}" />
+        {% endif %}
+
+        {% if article and article.author %}
+            <meta name="author" content="{{ article.author }}" />
+        {% elif page and page.author %}
+            <meta name="author" content="{{ page.author }}" />
+        {% else %}
+            <meta name="author" content="{{ AUTHOR }}" />
+        {% endif %}
+
+        {% from '_includes/_defaults.html' import SITE_DESCRIPTION with context %}
+
+        {% if SITE_DESCRIPTION %}
+            <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION|e }}{% endblock head_description %}" />
+        {% endif %}
+
+        {% block meta_tags_in_head %}
+            <meta property="og:type" content="article" />
+            <meta name="twitter:card" content="summary"/>
+        {% endblock meta_tags_in_head %}
+
+        <title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
+
+        {% block head_links %}
+            {% if USE_CDN %}
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+            {% else %}
+                <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/libs/bootstrap-4.2.1/dist/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/libs/fontawesome-free-5.2.0-web/css/all.min.css">
+            {% endif %}
+            <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/ipynb.css" media="screen">
+            <style>
+                #progressBar::-webkit-progress-value {
+                    background-color: {{ PROGRESSBAR_COLOR }};
+                }
+                #progressBar::-moz-progress-bar {
+                    background-color: {{ PROGRESSBAR_COLOR }};
+                }
+            </style>
+        {% endblock head_links %}
+
+        <link href="{{ SITEURL }}/theme/libs/prism.css" rel="stylesheet" />
+
+        {% include '_includes/favicon_links.html' %}
+        {% block feed_links %}
+        {% include '_includes/feeds.html' %}
+        {% endblock feed_links %}
+        {% include '_includes/google_analytics.html' %}
+    </head>
+    <body>
+        {% if INCLUDE_PROGRESSBAR %}
+            {% include '_includes/progressbar.html' %}
+        {% endif %}
+        <div class="banner-wrapper row" style="background-color: #24292e;">
+            <div class="banner">
+                <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light container">
+                    <div class="container navbar-title">
+                        <a href="/"><img id="banner-logo" src="{{ SITEURL }}/{{ LOGO_WITH_SUBTITLE }}" style="height: 40px; margin: 6px 0;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link rem_08" href="{{ SITEURL }}/{{ ABOUT_PAGE }}">About</a>
+                        </li>
+                        <li id="last-item" class="nav-item">
+                            <a class="nav-link rem_08" href="{{ SITEURL }}/{{ ARCHIVE_PAGE }}">Archive</a>
+                        </li>
+                     </ul>
+                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center" action="{{ SITEURL }}/search.html">
+                        <div class="search-box-div" align="center">
+                            <input id="tipue_search_input" class="form-control mr-md-2 rem_08 col-9" type="text" name="q" pattern=".{3,}" title="At least 3 characters" required="" aria-label="Search">
+                            <button id="search-btn" class="btn btn-search btn-outline-success btn-circle rem_08 col-3" type="submit" for="tipue_search_input">Search</button>
+                        </div>
+                    </form>
+                </div>
+                </nav>
+            </div>
+        </div>
+        <div id="wrap" class="mb-5">
+            {% block content %}{% endblock %}
+        </div>
+        {% include '_includes/footer.html' %}
+
+        {% if USE_CDN %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        {% else %}
+            <script type="text/javascript" src="{{ SITEURL }}/theme/libs/jquery.min.js"></script>
+            <script type="text/javascript" src="{{ SITEURL }}/theme/libs/bootstrap-4.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        {% endif %}
+
+        <script src="{{ SITEURL }}/theme/libs/prism.js"></script>
+        <script>
+            Prism.plugins.NormalizeWhitespace.setDefaults({
+                'remove-trailing': true,
+                'remove-indent': true,
+                'left-trim': true,
+                'right-trim': true,
+                /*'break-lines': 80,
+                'indent': 2,
+                'remove-initial-line-feed': false,
+                'tabs-to-spaces': 4,
+                'spaces-to-tabs': 4*/
+            });
+        </script>
+
+        <script type="text/javascript" src="{{ SITEURL }}/theme/js/custom.js"></script>
+        {% block script %}
+            <script>
+                function validateForm(query)
+                {
+                    return (query.length > 0);
+                }
+            </script>
+        {% endblock script %}
+        {% include '_includes/stat_counter.html' %}
+    </body>
+</html>
