@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About {{ AUTHOR_SHORTENED }} | {{ super() }}
+{% endblock title %}
+
+{% block meta_tags_in_head %}
+    {{ super() }}
+    <link rel="canonical" href="{{ SITEURL }}/{{ ABOUT_PAGE }}">
+    <meta property="og:title" content="{{ ABOUT_PAGE_TITLE }} | {{ SITENAME|striptags|e }}"/>
+    <meta name="twitter:title" content="{{ ABOUT_PAGE_TITLE }} | {{ SITENAME|striptags|e }}"/>
+    <meta property="og:url" content="{{ SITEURL }}/{{ ABOUT_PAGE }}" />
+    <meta property="og:description" content="{{ ABOUT_PAGE_DESCRIPTION }}" />
+    <meta name="twitter:description" content="{{ ABOUT_PAGE_DESCRIPTION }}"/>
+    <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+    <meta property="og:article:author" content="{{ AUTHOR }}" />
+    {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+    {% if FEATURED_IMAGE %}
+        <meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+        <meta name="twitter:image" content="{{ FEATURED_IMAGE }}"/>
+    {% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+    <div class="about-profile-banner row align-items-center justify-content-center" align="center" style="background-image: url('{{ SITEURL }}/{{ INDEX_BANNER_IMAGE }}')">
+        <div class="about-content-center">
+            <div class="cc-profile-image">
+                <a href="#"><img id="about-profile-image" src="{{ SITEURL }}/{{ PROFILE_PHOTO_ABOUT }}"></a>
+            </div>
+            <div class="about-author">{{ AUTHOR }}</div>
+            <p class="about-author-subtitle text-white">{{ AUTHOR_SUBTITLE }}</p>
+            <a class="btn btn-primary aos-init aos-animate" href="{{ RESUME_PDF_LINK }}" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">{{ RESUME_BUTTON_TEXT }}</a>
+        </div>
+    </div>
+    <div class="section about-button-container no-padding">
+       <div class="container">
+          <div class=" row justify-content-center">
+              <a class="btn btn-default btn-lg btn-icon about-button mr-3" href="{{ LINKEDIN_LINK }}">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a class="btn btn-default btn-round btn-lg btn-icon about-button" href="{{ GITHUB_LINK }}">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+       </div>
+    </div>
+    <div class="container post">
+        <div class="section" id="about" tabindex="-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="h2 mt-3 title text-center mb-5">About</div>
+                        <hr>
+                        <p>My name is Eric Kim - Web Developer, Data Scientist, and Petroleum Engineer.</p>
+                        <p>I'm currently a senior undergraduate student at the Univeristy of Texas at Austin, Hildebrand
+                            Department of Petroleum Engineering, the #1 petroleum engineering school in the US. I am a
+                            self-taught Python developer with strong engineering & statistical background. I'm most
+                            familiar with Python, but lately I've been involved more with full-stack web development
+                            powered by Django-backend, that includes PostgreSQL database, linux-server configuration, and
+                            user interface design for Oil & Gas industry.</p>
+                        <p>Right now my primary focus is on building my set of skills in statistics (especially
+                            geostatistics). I eventually want to move on to developing sophisticated algorithms that
+                            involve machine learning, but before I do that, I wanted to have strong background knowledge in
+                            statistics. </p>
+                        <p>The posts in this blog will mainly be about statistics, not machine learning. There are already
+                            more than enough of tutorials for Python machine learning, but there aren't that many learning
+                            materials that talks about Python application for statistical problems. I feel like statistics
+                            are neglected on the internet due to the recent boom in artificial intelligence, but in fact
+                            there are so many things you can do with basic statistics that does not involve any machine
+                            learning. </p>
+                        <p>I hope my blog posts help for those people who want to have strong basis in statistics</p>
+                        <p>I am very responsive on email. You can reach me via <b>aegis4048@gmail.com</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container-wrapper">
+        <div class="container post experience">
+            <div class="section pt-5 pb-5" id="about" tabindex="-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="h2 mt-0 title text-center mb-5 title-color">Experiences</div>
+                            <hr class="mb-5">
+                            <h3 class="mb-5 font-weight-normal title-color">Educations</h3>
+                            <div class="experiences">
+                                <div class="experience row no-margin">
+                                    <div class="col-md-4 no-padding">
+                                        <h4>The University of Texas at Austin</h4>
+                                        <p class="experience-period">Dec 2019</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>
+                                            <strong class="d-block mb-2">Bachelor of Science, Petroleum Engineering</strong>
+                                            <span class="experience-description">
+                                                GPA: 3.38 / 4.00<br>
+                                                Major GPA: 3.42 / 4.00
+                                            </span>
+                                            <span class="experience-details">
+                                                <span class="location"><span class="fa fa-map-marker-alt"></span>Austin, Texas</span>
+                                                <span class="seperator">|</span>
+                                                <span class="link">
+                                                    <span class="fa fa-link"></span>
+                                                    <a href="https://www.pge.utexas.edu" target="_blank">https://www.pge.utexas.edu</a>
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="mb-5 font-weight-normal title-color">Careers</h3>
+                            <div class="experiences">
+                                <div class="experience row no-margin">
+                                    <div class="col-md-4 no-padding">
+                                        <h4>Intellicess</h4>
+                                        <p class="experience-period">May 2018 - Dec 2018</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>
+                                            <strong class="d-block mb-2">Web Development Intern</strong>
+                                            <span class="experience-description">
+                                                <i class="fa fa-circle"></i>Designed a real-time drilling monitoring system that visualizes & updates data on web application<br>
+                                                <i class="fa fa-circle"></i>Developed front-end UI, back-end, and DB structures for the prototype of drilling data management system<br>
+                                                <i class="fa fa-circle"></i>Provided dev-ops assistance in setting up Linux server & network configuration<br>
+                                            </span>
+                                            <span class="experience-details">
+                                                <span class="location"><span class="fa fa-map-marker-alt"></span>Austin, Texas</span>
+                                                <span class="seperator">|</span>
+                                                <span class="link">
+                                                    <span class="fa fa-link"></span>
+                                                    <a href="https://www.intellicess.com" target="_blank">https://www.intellicess.com</a>
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="experience row no-margin">
+                                    <div class="col-md-4 no-padding">
+                                        <h4>Rig Automation & Performance Improvement in Drilling (RAPID)</h4>
+                                        <p class="experience-period">Sep 2017 - May 2018</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>
+                                            <strong class="d-block mb-2">Drilling Research Assistant</strong>
+                                            <span class="experience-description">
+                                                <i class="fa fa-circle"></i>Assisted in quantifying relationship between rock strength and mechanical specific energy<br>
+                                                <i class="fa fa-circle"></i>Studied indicators for drilling malfunctions<br>
+                                                <i class="fa fa-circle"></i>Developed an automated PDF parsing program that interprets data from PDF drilling morning reports<br>
+                                                <i class="fa fa-circle"></i>Provided programming assistance in cleaning, processing, and managing raw drilling data in NoSQL database<br>
+                                            </span>
+                                            <span class="experience-details">
+                                                <span class="location"><span class="fa fa-map-marker-alt"></span>Austin, Texas</span>
+                                                <span class="seperator">|</span>
+                                                <span class="link">
+                                                    <span class="fa fa-link"></span>
+                                                    <a href="https://drilling.utexas.edu" target="_blank">https://drilling.utexas.edu</a>
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="mb-5 font-weight-normal title-color">Contests</h3>
+                            <div class="experiences">
+                                <div class="experience row no-margin">
+                                    <div class="col-md-4 no-padding">
+                                        <h4>Society of Petroleum Engineers Local Contest</h4>
+                                        <p class="experience-period">Spring 2018</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>
+                                            <strong class="d-block mb-2">Participant</strong>
+                                            <span class="experience-description">
+                                                <i class="fa fa-circle"></i>Provided a machine learning solution to decrease uncertainty in shale plays<br>
+                                                <i class="fa fa-circle"></i>Presented the application of neural network in forecasting hydrocarbon production without using decline curve analysis<br>
+                                            </span>
+                                            <span class="experience-details">
+                                                <span class="location"><span class="fa fa-map-marker-alt"></span>Austin, Texas</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="experience row no-margin">
+                                    <div class="col-md-4 no-padding">
+                                        <h4>The Energy Case Competition</h4>
+                                        <p class="experience-period">Spring 2017</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>
+                                            <strong class="d-block mb-2">Finalist</strong>
+                                            <span class="experience-description">
+                                                <i class="fa fa-circle"></i>Provided natural gas vehicles as a solution to growing energy demand & climate change issues<br>
+                                                <i class="fa fa-circle"></i>Integrated Spotfire, MATLAB, and Excel to analyze data from public sources<br>
+
+                                            </span>
+                                            <span class="experience-details">
+                                                <span class="location"><span class="fa fa-map-marker-alt"></span>Austin, Texas</span>
+                                                <span class="seperator">|</span>
+                                                <span class="link">
+                                                    <span class="fa fa-link"></span>
+                                                    <a href="https://theenergycase.com/results" target="_blank">https://theenergycase.com/results</a>
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container post">
+        <div class="section" id="about" tabindex="-1">
+            {% include '_includes/techstacks.html' %}
+        </div>
+    </div>
+{% endblock content %}
+
+

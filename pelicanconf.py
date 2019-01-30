@@ -8,7 +8,7 @@ AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
 SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'
-SITEURL = 'https://aegis4048.github.io'
+SITEURL = ''
 
 # Regional Settings
 TIMEZONE = 'America/Los_Angeles'
@@ -64,7 +64,7 @@ SITEMAP = {
 }
 
 # Appearance
-THEME = 'themes/pelican-aegis-jupyter-theme'
+THEME = 'pelican-aegis-jupyter-theme'
 DEFAULT_PAGINATION = False
 
 # Defaults
@@ -102,8 +102,8 @@ MISC_DIR = 'downloads/misc'
 
 ENABLE_MATHJAX = True
 
-# files are actually saved in /themes/aegis-jupyter/static/img/, but its copied to /output/theme/img/.
-# just store any meta files in /themes/aegis-jupyter/static/, and you are good.
+# files are actually saved in /aegis-jupyter/static/img/, but its copied to /output/theme/img/.
+# just store any meta files in /aegis-jupyter/static/, and you are good.
 PROFILE_PHOTO_FOOTER = "theme/img/profile_photo_footer.jpg"
 PROFILE_PHOTO_ABOUT = "theme/img/profile_photo_about.jpg"
 INDEX_BANNER_IMAGE = "theme/img/index_banner_image.jpg"
@@ -190,9 +190,5 @@ TECH_STACKS_LEFT, TECH_STACKS_RIGHT = process_techstacks(TECH_STACKS, NUM_MAX_ST
 PORT = 8090
 
 # git submodule add https://github.com/aegis4048/aegis4048.github.io.git output
-# git rm --cached output
-# rm -rf .git/modules/output
-
-
-DISQUS_SITENAME = "pythonic-excursions"
-GOOGLE_ANALYTICS = "UA-133310548-1"
+# git rm --cached themes/pelican-aegis-jupyter-theme
+# rm -rf .git/modules/themes/pelican-aegis-jupyter-theme

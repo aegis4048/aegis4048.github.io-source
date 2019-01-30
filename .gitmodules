@@ -7,3 +7,6 @@
 [submodule "themes/pelican-aegis-jupyter-theme"]
 	path = themes/pelican-aegis-jupyter-theme
 	url = https://github.com/aegis4048/pelican-aegis-jupyter-theme.git
+[submodule "pelican-aegis-jupyter-theme"]
+	path = pelican-aegis-jupyter-theme
+	url = https://github.com/aegis4048/pelican-aegis-jupyter-theme.git

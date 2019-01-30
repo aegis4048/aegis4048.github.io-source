@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="h2 title text-center mb-5">Tech Stacks</div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        {% for stack in TECH_STACKS_LEFT %}
+                            <li>
+                                {% for key, value in stack.items() %}
+                                    <span class="ability-title">{{ key }}</span>
+                                    <span class="ability-score">
+                                        {% for iter in range(value["empty_star"]) %}
+                                            <span class="far fa-star"></span>
+                                        {% endfor %}
+                                        {% for iter in range(value["filled_star"]) %}
+                                            <span class="fas fa-star"></span>
+                                        {% endfor %}
+                                    </span>
+                                {% endfor %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        {% for stack in TECH_STACKS_RIGHT %}
+                            <li>
+                                {% for key, value in stack.items() %}
+                                    <span class="ability-title">{{ key }}</span>
+                                    <span class="ability-score">
+                                        {% for iter in range(value["empty_star"]) %}
+                                            <span class="far fa-star"></span>
+                                        {% endfor %}
+                                        {% for iter in range(value["filled_star"]) %}
+                                            <span class="fas fa-star"></span>
+                                        {% endfor %}
+                                    </span>
+                                {% endfor %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

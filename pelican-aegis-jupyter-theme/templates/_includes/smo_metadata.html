@@ -1,0 +1,29 @@
+<!-- modified by Eric Kim -->
+
+{% macro smo_metadata(article) %}
+    <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+    <meta property="og:title" content="{{ article.title|striptags|e }} | {{ SITENAME|striptags|e }}"/>
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+    <meta property="og:description" content="{{ article.social_media_description|striptags|e }}" />
+    <meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+    <meta property="og:article:author" content="{{ article.author }}" />
+    {% if article.date %}
+        <meta property="og:article:published_time" content="{{ article.date.isoformat() }}" />
+    {% endif %}
+    {% if article.locale_modified and article.modified %}
+        <meta property="og:article:modified_time" content="{{ article.modified.isoformat() }}" />
+    {% endif %}
+    <meta name="twitter:title" content="{{ article.title|striptags|e }} | {{ SITENAME|striptags|e }}">
+    <meta name="twitter:description" content="{{ article.social_media_description|striptags|e }}">
+    {% if article.featured_image %}
+        <meta property="og:image" content="{{ SITEURL }}/{{ article.featured_image }}" />
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ article.featured_image }}" >
+    {% else %}
+        {% from '_includes/_defaults.html' import FEATURED_IMAGE with context %}
+        {% if FEATURED_IMAGE %}
+            <meta property="og:image" content="{{ FEATURED_IMAGE }}" />
+            <meta name="twitter:image" content="{{ FEATURED_IMAGE }}"/>
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
