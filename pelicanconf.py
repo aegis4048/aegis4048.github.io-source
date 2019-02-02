@@ -192,3 +192,6 @@ PORT = 8090
 # git submodule add https://github.com/aegis4048/aegis4048.github.io.git output
 # git rm --cached pelican-aegis-jupyter-theme -r
 # rm -rf .git/modules/pelican-aegis-jupyter-theme
+
+
+# pelican content -s publishconf.py
