@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import re
+import os
+import shutil
+
 AUTHOR = 'ERIC SOOBIN KIM'
 AUTHOR_SHORTENED = 'Eric'
 AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
@@ -65,7 +69,7 @@ SITEMAP = {
 
 # Appearance
 THEME = 'pelican-aegis-jupyter-theme'
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 5
 
 # Defaults
 DEFAULT_CATEGORY = 'Miscellaneous'
@@ -83,7 +87,7 @@ CATEGORY_FEED_RSS = None
 CLAIM_GOOGLE = "ZsWFnpirKDgtbmwb1YRymDnSfvnUrpzCbf6LD1F_4TY"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
-STATIC_PATHS = ['figures', 'downloads', 'images',]
+STATIC_PATHS = ['figures', 'images', 'downloads/notebooks/jupyter_images']
 DIRECT_TEMPLATES = (('index', 'archives', 'search', '404', 'about'))
 AUTHOR_SAVE_AS = ''
 USE_SHORTCUT_ICONS = True
@@ -94,11 +98,6 @@ SHARE_POST_INTRO = 'Share This Post :'
 
 # SMO
 FEATURED_IMAGE = SITEURL + '/theme/img/logo_icon_background.png'
-
-# for liquid tags
-CODE_DIR = 'downloads/code'
-NOTEBOOK_DIR = 'downloads/notebooks'
-MISC_DIR = 'downloads/misc'
 
 ENABLE_MATHJAX = True
 
@@ -123,6 +122,28 @@ ARCHIVE_PAGE = 'archives.html'
 # when developing offline, set it as False.
 USE_CDN = False
 
+########################### Jupyter Notebook related ########################
+
+# for liquid tags
+CODE_DIR = 'downloads/code'
+NOTEBOOK_DIR = 'downloads/notebooks'
+MISC_DIR = 'downloads/misc'
+
+# copies files that are used when writing jupyter notebook to output directory
+JUPYTER_IMAGES_DIR = 'content/downloads/notebooks/jupyter_images'
+
+
+def copy_jupyter_images_to_output(dir):
+    jupyter_image_dir = re.split('\\\\|\\/|\\/\\/', dir)[-1]
+
+    if not os.path.exists(os.path.join('output', jupyter_image_dir)):
+        os.makedirs(os.path.join('output', jupyter_image_dir))
+
+    for file in os.listdir(dir):
+        shutil.copy2(os.path.join(dir, file), os.path.join('output', jupyter_image_dir))
+
+
+copy_jupyter_images_to_output(JUPYTER_IMAGES_DIR)
 
 ############################ Social Media Shares ############################
 
