@@ -1,5 +1,5 @@
 Title: Spatial Simulation 1: Basics of Variograms
-Tags: geostatistics, variogram, simulation, spatial
+Tags: geostatistics, variogram, simulation, spatial, 2D
 Date: 2019-02-06 09:00
 Slug: spatial-simulation-1-basics-of-variograms
 Subtitle:
