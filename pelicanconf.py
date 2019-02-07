@@ -186,14 +186,13 @@ TECH_STACKS = {'Python': 5,
                'PostgreSQL': 1,
                'Bootstrap': 4,
                'HTML': 4,
-               'Spotfire': 2,
+               'Spotfire': 1,
                'Django': 4,
                'TimescaleDB': 4,
                'jQuery': 4,
                'CSS': 4,
-               'MATLAB': 2,
                'Linux': 3,
-               'Server & Network': 2
+               'Server & Network': 1
                }
 
 
