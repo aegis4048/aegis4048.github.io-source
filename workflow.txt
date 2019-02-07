@@ -35,3 +35,5 @@ Sill as last:
 	col-md-6 col-sm-12
 	left (variogram, red box = sill)
 	right (actual 2D spatial data, show no correlation) 	
+
+5. Observation 5: range
