@@ -1,0 +1,37 @@
+Variogram + equations side by side
+
+Equation: briefly explain what each variable means
+
+Sill as last: 
+
+1. Observation 1: Z(ua)(head) and Z(ua+1)(tail)
+
+	Explain Z(ua), Z(ua+1) - porosity values at a certain position, separated by
+	lag distance h. 
+
+	terminology: lag distance (alert) - known as h
+
+	annotate 1 pair
+
+2. Observation 2: N(h)
+	
+	N(h) denotes for number of all pairs that are separated by distance h.
+
+	annotate 4 pairs
+
+3. Observation 3: gamma(h)
+
+	gamma denotes for variance over distance h. 	
+
+	A single point on variogram is a variance of all pairs that are separated by distance h.
+
+	3 rows of col-12
+	variogram (circle one dot) --- connected to --- 2D 4 pairs annotated plot at 2m
+	variogram (circle one dot) --- connected to --- 2D 4 pairs annotated plot at 4m
+	variogram (circle one dot) --- connected to --- 2D 4 pairs annotated plot at 6m
+
+4. Observation 4: sill (sigma)
+
+	col-md-6 col-sm-12
+	left (variogram, red box = sill)
+	right (actual 2D spatial data, show no correlation) 	

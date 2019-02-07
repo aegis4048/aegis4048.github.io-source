@@ -87,7 +87,7 @@ CATEGORY_FEED_RSS = None
 CLAIM_GOOGLE = "ZsWFnpirKDgtbmwb1YRymDnSfvnUrpzCbf6LD1F_4TY"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
-STATIC_PATHS = ['figures', 'images', 'downloads/notebooks/jupyter_images']
+STATIC_PATHS = ['figures', 'images', 'downloads']
 DIRECT_TEMPLATES = (('index', 'archives', 'search', '404', 'about'))
 AUTHOR_SAVE_AS = ''
 USE_SHORTCUT_ICONS = True
