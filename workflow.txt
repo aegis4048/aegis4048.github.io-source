@@ -1,39 +1,26 @@
-Variogram + equations side by side
+variogram
 
-Equation: briefly explain what each variable means
+	too noisy - accurate, but highly unstable
+	too few   - too imprecise for accurate modling. 
 
-Sill as last: 
+	extreme values (outliers needs to be removed)
 
-1. Observation 1: Z(ua)(head) and Z(ua+1)(tail)
+	natural process do not lead to isotropic spatial distributions
+	typically there is a plane of major continuity. 
 
-	Explain Z(ua), Z(ua+1) - porosity values at a certain position, separated by
-	lag distance h. 
-
-	terminology: lag distance (alert) - known as h
-
-	annotate 1 pair
-
-2. Observation 2: N(h)
+	Directionality
 	
-	N(h) denotes for number of all pairs that are separated by distance h.
+		- in absence of good understanding of the local geologic directionaly,	
+		  start with a neutral isotropic model, and combine it with geologic knowledge
+		  to decide directionality
 
-	annotate 4 pairs
+	sill and apparent sill
+	-	http://www.statios.com/resources/04-variogram.pdf
 
-3. Observation 3: gamma(h)
 
-	gamma denotes for variance over distance h. 	
+Presence of a nugget means that any two observations 
+sampled arbitrarily closely will not necessarily have the same value
 
-	A single point on variogram is a variance of all pairs that are separated by distance h.
-
-	3 rows of col-12
-	variogram (circle one dot) --- connected to --- 2D 4 pairs annotated plot at 2m
-	variogram (circle one dot) --- connected to --- 2D 4 pairs annotated plot at 4m
-	variogram (circle one dot) --- connected to --- 2D 4 pairs annotated plot at 6m
-
-4. Observation 4: sill (sigma)
-
-	col-md-6 col-sm-12
-	left (variogram, red box = sill)
-	right (actual 2D spatial data, show no correlation) 	
-
-5. Observation 5: range
+The nugget effect is like the random noise. It's just the small scale
+variability that you can't estimate with your large scale 
+variability model.
