@@ -18,9 +18,19 @@ variogram
 	-	http://www.statios.com/resources/04-variogram.pdf
 
 
-Presence of a nugget means that any two observations 
-sampled arbitrarily closely will not necessarily have the same value
+Don't forget to transform data into Gaussian space for Gaussian simulation later
 
-The nugget effect is like the random noise. It's just the small scale
-variability that you can't estimate with your large scale 
-variability model.
+Zonal 
+
+
+Search template
+
+too many samples, medium samples, too few samples 
+
+
+
+Data preparation:
+	
+	Gaussian Space Transform for Gaussian Simulation later
+	
+	Coordinate Transformation for search template
