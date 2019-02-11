@@ -14,6 +14,7 @@ SITESUBTITLE = u'Stories about Python and Data Science'
 SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'
 SITEURL = ''
 
+
 # Regional Settings
 TIMEZONE = 'America/Los_Angeles'
 DATE_FORMATS = {'en': '%b %d, %Y'}
