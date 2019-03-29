@@ -184,16 +184,11 @@ PROGRESSBAR_COLOR = '#24292e'
 # code snippet for processing variables for auto-generation of Tech Stacks
 NUM_MAX_STAR = 5
 TECH_STACKS = {'Python': 5,
-               'PostgreSQL': 1,
                'Bootstrap': 4,
                'HTML': 4,
-               'Spotfire': 1,
                'Django': 4,
-               'TimescaleDB': 4,
                'jQuery': 4,
                'CSS': 4,
-               'Linux': 3,
-               'Server & Network': 1
                }
 
 
