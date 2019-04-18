@@ -1,11 +1,11 @@
 Title: Understanding Multi-Dimensionality in Vector Space Modeling
-Tags: data-mining, nlp, dimensional reduction, svd, tf-idf, word2vec, co-occurrence matrix, vector space model
+Tags: data-mining, nlp, dimensional reduction, svd, tf-idf, word2vec, co-occurrence matrix, vector space model, word vectors, 3D, nltk, tokenization, window size, dimensional reduction
 Date: 2019-04-16 09:00
 Slug: understanding_multi-dimensionality_in_vector_space_modeling
 Subtitle:
 Keywords: 
-Featured_Image: images/featured_images/pdf_parse_demo.png
-Social_Media_Description: 
+Featured_Image: images/featured_images/3d_wordvec_3.png
+Social_Media_Description: What is your understanding of multi-dimensionality in Natural Language Processing?
 Summary: {% notebook downloads/notebooks/Understanding_Multi-Dimensionality_in_Vector_Space_Modeling.ipynb cells[1:2] %}
 
 {% notebook downloads/notebooks/Understanding_Multi-Dimensionality_in_Vector_Space_Modeling.ipynb cells[:] %}
