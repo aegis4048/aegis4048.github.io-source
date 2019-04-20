@@ -5,7 +5,8 @@ Slug: transforming-non-normal-distribution-to-normal-distribution
 Subtitle:
 Keywords: 
 Featured_Image: images/featured_images/control_chart.png
-Social_Media_Description: 
+Social_Media_Description: What is your understanding of multi-dimensionality in Natural Language Processing? What is your understanding of multi-dimensionality in Natural Language Processing? What is your understanding of multi-dimensionality in Natural Language Processing?
+                          What 
 Summary: {% notebook downloads/notebooks/TransformingNonNormalDistributionToNormalDistribution.ipynb cells[:1] %}
 
 {% notebook downloads/notebooks/TransformingNonNormalDistributionToNormalDistribution.ipynb cells[:] %}

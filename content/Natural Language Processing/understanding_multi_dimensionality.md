@@ -5,7 +5,7 @@ Slug: understanding_multi-dimensionality_in_vector_space_modeling
 Subtitle:
 Keywords: 
 Featured_Image: images/featured_images/3d_wordvec_3.png
-Social_Media_Description: What is your understanding of multi-dimensionality in Natural Language Processing?
+Social_Media_Description: What is your understanding of multi-dimensionality in Natural Language Processing? What is your understanding of multi-dimensionality in Natural Language Processing? What is your understanding of multi-dimensionality in Natural Language Processing?
 Summary: {% notebook downloads/notebooks/Understanding_Multi-Dimensionality_in_Vector_Space_Modeling.ipynb cells[1:2] %}
 
 {% notebook downloads/notebooks/Understanding_Multi-Dimensionality_in_Vector_Space_Modeling.ipynb cells[:] %}
