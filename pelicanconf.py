@@ -6,7 +6,7 @@ import re
 import os
 import shutil
 
-AUTHOR = 'ERIC SOOBIN KIM'
+AUTHOR = 'ERIC KIM'
 AUTHOR_SHORTENED = 'Eric'
 AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
 SITENAME = 'Pythonic Excursions'
@@ -70,7 +70,7 @@ SITEMAP = {
 
 # Appearance
 THEME = 'pelican-aegis-jupyter-theme'
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = False
 
 # Defaults
 DEFAULT_CATEGORY = 'Miscellaneous'
