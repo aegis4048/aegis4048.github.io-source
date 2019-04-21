@@ -5,8 +5,9 @@ Slug: transforming-non-normal-distribution-to-normal-distribution
 Subtitle:
 Keywords: 
 Featured_Image: images/featured_images/control_chart.png
-Social_Media_Description: What is your understanding of multi-dimensionality in Natural Language Processing? What is your understanding of multi-dimensionality in Natural Language Processing? What is your understanding of multi-dimensionality in Natural Language Processing?
-                          What 
+readingTime: 13
+Social_Media_Description: Many statistical & machine learning techniques assume normality of data. What are the options you have if your data is not normally distributed?
+IndexPreview: Many statistical & machine learning techniques assume normality of data. What are the options you have if your data is not normally distributed? Transforming non-normal data to normal data using Box-Cox transformation is one of them.
 Summary: {% notebook downloads/notebooks/TransformingNonNormalDistributionToNormalDistribution.ipynb cells[:1] %}
 
 {% notebook downloads/notebooks/TransformingNonNormalDistributionToNormalDistribution.ipynb cells[:] %}
