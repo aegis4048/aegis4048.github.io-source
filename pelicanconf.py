@@ -212,3 +212,24 @@ PORT = 8090
 
 
 # pelican content -s publishconf.py
+
+
+# Javascript function for estimating reading time. Run this on an article, and set the 'readingTime' variable in .md files.
+"""
+var count_p = 0
+$('article').find('p').each(function(){
+    count_p += 1
+});
+
+var count_word = 0
+for (i = 0; i < count_p; i++) {
+    Countable.count($('article p')[i], function(counter) {
+        count_word += counter.words;
+    });
+}
+
+var wpm = 200,
+    estimatedTimeMin = Math.round(count_word / wpm)
+    
+console.log(estimatedTimeMin)
+"""
