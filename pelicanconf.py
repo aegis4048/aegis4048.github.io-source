@@ -233,3 +233,12 @@ var wpm = 200,
     
 console.log(estimatedTimeMin)
 """
+
+
+"""
+$('.disqus-comment').each(function(){
+    var numCommentText = $(this).text(),
+        num = numCommentText.match(/\d+/g)
+    $(this).text(num)
+});
+"""
