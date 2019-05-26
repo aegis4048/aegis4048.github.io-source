@@ -1,13 +1,13 @@
 Title: Optimize Computational Efficiency of Skip-Gram with Negative Sampling
-Tags: data-mining, nlp, word2vec, co-occurrence matrix, vector space model, word vectors, window size, skip-gram, neural network, negative sampling, stochastic gradient descent, learning rate
-Date: 2019-05-24 09:00
-Slug: optimizing_computational_efficiency_of_skip-gram_with_negative_sampling
+Tags: data-mining, nlp, word2vec, word vectors, window size, skip-gram, neural network, negative sampling, stochastic gradient descent, learning rate, sigmoid, softmax, algorithm complexity, noise distribution 
+Date: 2019-05-26 09:00
+Slug: optimize_computational_efficiency_of_skip-gram_with_negative_sampling
 Subtitle:
 Keywords: 
 Featured_Image: images/featured_images/negative_sampling.png
-readingTime: 20
-Social_Media_Description: How is neural network used in language modeling to capture relationships among words?
-IndexPreview: Negative sampling
+readingTime: 15
+Social_Media_Description: How is negative sampling used to improve computational efficieny of Word2Vec?
+IndexPreview: When training your NLP model with Skip-Gram, the very large size of vocabs imposes high computational cost on your machine. Since the original Skip-Gram model is unable to handle this high cost, we use an alternative, called Negative Sampling. 
 Summary: {% notebook downloads/notebooks/Optimizing_Computational_Efficiency_of_Skip-Gram_with_Negative_Sampling.ipynb cells[1:2] %}
 
 {% notebook downloads/notebooks/Optimizing_Computational_Efficiency_of_Skip-Gram_with_Negative_Sampling.ipynb cells[:] %}
