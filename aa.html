@@ -1,8 +1,45 @@
-<div class="row">
-    <div class="col-6"><img src="https://aegis4048.github.io/images/analytics_2.jpg"></div>
-    <div class="col-6"><img src="https://aegis4048.github.io/images/analytics_3.jpg"></div>
-</div>
-<div class="row">
-    <div class="col-6"><img src="https://aegis4048.github.io/images/analytics_4.jpg"></div>
-    <div class="col-6"><img src="https://aegis4048.github.io/images/analytics_5.jpg"></div>
+<div class="solution_panel closed">
+    <div class="solution_title">
+        <p class="solution_title_string">Source Code For Figure (?)</p>
+        <ul class="nav navbar-right panel_toolbox">
+            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+        </ul>
+    <div class="clearfix"></div>
+    </div>
+    <div class="solution_content">
+        <pre>
+            <code class="language-python">
+                from scipy import stats
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                df = 9
+                x = np.linspace(-1, 28, 1000)
+                y = stats.chi2.pdf(x, df, loc=0, scale=1)
+                right_tail = stats.chi2.ppf(1 - 0.025, df)
+                left_tail = stats.chi2.ppf(1 - 0.975, df)
+
+                plt.style.use('seaborn-whitegrid')
+                fig, ax = plt.subplots(figsize=(12, 5))
+
+                ax.plot(x, y, c='black', label='Degrees of freedom = %d' % df)
+                ax.set_xlabel('$\chi^2$', fontsize=17)
+                ax.set_ylabel(r'Probability', fontsize=17)
+                ax.set_title(r'$\chi^2\ \mathrm{Distribution}$, df = %d' % df, fontsize=17)
+                ax.fill_between(x, 0, y, where=(np.array(x)>min(x)) & (np.array(x)<=left_tail), facecolor='grey')
+                ax.fill_between(x, 0, y, where=(np.array(x)>left_tail) & (np.array(x)<right_tail), facecolor='lightgrey')
+                ax.fill_between(x, 0, y, where=(np.array(x)>right_tail) & (np.array(x)<=max(x)), facecolor='grey')
+                ax.grid(False)
+
+                ax.text(22, 0.008, '2.5% outlier', fontsize=13)
+                ax.text(-2, 0.008, '2.5% outlier', fontsize=13)
+                ax.text(0.5, 0.04, '$\chi^2_{.975} = %.2f$' % left_tail, fontsize=14, bbox=dict(boxstyle='round', facecolor='white'))
+                ax.text(16.5, 0.015, '$\chi^2_{.025} = %.2f$' % right_tail, fontsize=14, bbox=dict(boxstyle='round', facecolor='white'))
+                ax.text(20, 0.08, '$\chi^2_{.975} \leq \chi^2 \leq \chi^2_{.025}$', fontsize=16)
+                ax.text(20, 0.06, '$2.70 \leq \chi^2 \leq 19.02$', fontsize=16)
+                ax.text(6, 0.05, '95% confidence interval', fontsize=16)
+                ax.text(6, 0.04, 'of variance', fontsize=16);
+            </code>
+        </pre>
+    </div>
 </div>
