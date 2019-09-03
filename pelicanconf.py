@@ -210,6 +210,9 @@ PORT = 8090
 # git rm --cached pelican-aegis-jupyter-theme -r
 # rm -rf .git/modules/pelican-aegis-jupyter-theme
 
+# git remote show origin * remote origin             --- check the connected repo
+# git submodule update --init --recursive
+# git submodule update --init
 
 # pelican content -s publishconf.py
 
