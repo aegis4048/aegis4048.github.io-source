@@ -1,45 +1,86 @@
-<div class="solution_panel closed">
-    <div class="solution_title">
-        <p class="solution_title_string">Source Code For Figure (?)</p>
-        <ul class="nav navbar-right panel_toolbox">
-            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+<div id="toc_container">
+    <p class="toc_title">Contents</p>
+    <ul class="toc_list">
+        <li>
+            <a href="#Understanding confidence interval with analogy"><span class="toc_label">1</span>Understanding
+                confidence interval with analogy</a>
+            <ul>
+                <li><a href="#Uncertainty in rock porosity"><span class="toc_label">Example 1:</span>Uncertainty in rock
+                    porosity</a></li>
+                <li><a href="#Purity of methamphetamine (crystal) in Breaking Bad"><span
+                        class="toc_label">Example 2:</span>Purity of methamphetamine (crystal) in Breaking Bad</a></li>
+            </ul>
+        </li>
+        <li><a href="#quick-highlights"><span class="toc_label">2</span>Key takeaways</a></li>
+        <li><a href="#population_vs_samples"><span class="toc_label">3</span>Population vs Samples</a></li>
+        <ul>
+            <li><a href="#sample_pop_var"><span class="toc_label">Notes:</span>Population variance $\sigma^2$ vs.
+                Sample variance $s^2$</a></li>
+            <li><a href="#python_variance"><span class="toc_label">Pythonic Tip:</span>Difference between Numpy variance
+                and Pandas variance</a></li>
         </ul>
-    <div class="clearfix"></div>
-    </div>
-    <div class="solution_content">
-        <pre>
-            <code class="language-python">
-                from scipy import stats
-                import matplotlib.pyplot as plt
-                import numpy as np
-
-                df = 9
-                x = np.linspace(-1, 28, 1000)
-                y = stats.chi2.pdf(x, df, loc=0, scale=1)
-                right_tail = stats.chi2.ppf(1 - 0.025, df)
-                left_tail = stats.chi2.ppf(1 - 0.975, df)
-
-                plt.style.use('seaborn-whitegrid')
-                fig, ax = plt.subplots(figsize=(12, 5))
-
-                ax.plot(x, y, c='black', label='Degrees of freedom = %d' % df)
-                ax.set_xlabel('$\chi^2$', fontsize=17)
-                ax.set_ylabel(r'Probability', fontsize=17)
-                ax.set_title(r'$\chi^2\ \mathrm{Distribution}$, df = %d' % df, fontsize=17)
-                ax.fill_between(x, 0, y, where=(np.array(x)>min(x)) & (np.array(x)<=left_tail), facecolor='grey')
-                ax.fill_between(x, 0, y, where=(np.array(x)>left_tail) & (np.array(x)<right_tail), facecolor='lightgrey')
-                ax.fill_between(x, 0, y, where=(np.array(x)>right_tail) & (np.array(x)<=max(x)), facecolor='grey')
-                ax.grid(False)
-
-                ax.text(22, 0.008, '2.5% outlier', fontsize=13)
-                ax.text(-2, 0.008, '2.5% outlier', fontsize=13)
-                ax.text(0.5, 0.04, '$\chi^2_{.975} = %.2f$' % left_tail, fontsize=14, bbox=dict(boxstyle='round', facecolor='white'))
-                ax.text(16.5, 0.015, '$\chi^2_{.025} = %.2f$' % right_tail, fontsize=14, bbox=dict(boxstyle='round', facecolor='white'))
-                ax.text(20, 0.08, '$\chi^2_{.975} \leq \chi^2 \leq \chi^2_{.025}$', fontsize=16)
-                ax.text(20, 0.06, '$2.70 \leq \chi^2 \leq 19.02$', fontsize=16)
-                ax.text(6, 0.05, '95% confidence interval', fontsize=16)
-                ax.text(6, 0.04, 'of variance', fontsize=16);
-            </code>
-        </pre>
-    </div>
+        <li><a href="#Confidence interval of different statistics"><span class="toc_label">4</span>Confidence interval
+            of normal distribution</a></li>
+        <ul>
+            <li><a href="#conf_int_of_mean"><span class="toc_label">4.1</span>Confidence interval of mean</a></li>
+            <ul>
+                <li><a href="#dist_stats"><span class="toc_label">Notes:</span>Distribution of various statistics</a>
+                </li>
+                <li><a href="#t_vs_z"><span class="toc_label">Notes:</span>z-score vs t-score</a></li>
+                <li><a href="#python_ci_mean"><span class="toc_label">Pythonic Tip:</span>Computing confidence interval of mean with SciPy</a></li>
+            </ul>
+            <li><a href="#conf_int_of_diff_in_mean"><span class="toc_label">4.2</span>Confidence interval of difference
+                in mean</a></li>
+            <ul>
+                <li><a href="#anova"><span class="toc_label">Notes:</span>Comparing means of more than two samples with ANOVA</a></li>
+                <li><a href="#ind_equal"><span class="toc_label">4.2.1</span>Independent (unpaired) samples, equal
+                    variance - Student's t-interval</a></li>
+                <ul>
+                    <li><a href="#python_ind_equal"><span class="toc_label">Pythonic Tip:</span>Computing student's t-interval</a></li>
+                </ul>
+                <li><a href="#ind_unequal"><span class="toc_label">4.2.2</span>Independent (unpaired) samples, unequal variance - Welch's t-interval</a></li>
+                <ul>
+                    <li><a href="#python_ind_unequal"><span class="toc_label">Pythonic Tip:</span>Computing Welch's t-interval</a></li>
+                </ul>
+                <li><a href="#dep"><span class="toc_label">4.2.3</span>Dependent (paired) samples - Paired t-interval</a></li>
+                <ul>
+                    <li><a href="#python_dep"><span class="toc_label">Pythonic Tip:</span>Computing paired t-interval</a></li>
+                </ul>
+                <li><a href="#which_to_use"><span class="toc_label">Notes:</span>Deciding which t-test to use</a></li>
+            </ul>
+            <li><a href="#conf_int_of_var"><span class="toc_label">4.3</span>Confidence interval of variance</a></li>
+            <ul>
+                <li><a href="#chi_square"><span class="toc_label">Notes:</span>Chi-square $\chi^2$ distribution</a></li>
+                <li><a href="#one_tail_two_tail"><span class="toc_label">Notes:</span>One-tail vs two-tail</a></li>
+                <li><a href="#python_ci_var"><span class="toc_label">Pythonic Tip:</span>Computing confidence interval of variance with SciPy</a></li>
+            </ul>
+            <li><a href="#conf_int_of_other"><span class="toc_label">4.4</span>Confidence interval of other statistics: Bootstrap</a></li>
+            <li><a href="#"><span class="toc_label">4.5</span>Confidence interval of regression</a></li>
+            <li><a href="#"><span class="toc_label">4.6</span>Two-tailed vs one-tailed interval</a></li>
+            <li><a href="#robustness"><span class="toc_label">Notes:</span>Robustness of confidence interval to non-normality</a></li>
+        </ul>
+        <li><a href="#conf_int_non_normal"><span class="toc_label">5</span>Confidence interval of non-normal
+            distribution</a></li>
+        <ul>
+            <li><a href="#"><span class="toc_label">5.1</span>Comparing central tendency of populations</a></li>
+            <li><a href="#"><span class="toc_label">5.2</span>Credible interval</a></li>
+            <li><a href="#"><span class="toc_label">5.3</span>Transform to normal distribution with Box-Cox</a></li>
+            <li><a href="#"><span class="toc_label">5.4</span>Bootstrapping</a></li>
+                <ul>
+                    <li><a href="#"><span class="toc_label">5.4.1</span>Bootstrap CI of statistics</a></li>
+                    <li><a href="#"><span class="toc_label">5.4.1</span>Bootstrap CI of difference in statistics</a></li>
+                </ul>
+        </ul>
+        <li><a href="#"><span class="toc_label">6</span>FAQ's</a></li>
+        <ul>
+            <li><a href="#"><span class="toc_label">6.1</span>What is confidence level?</a></li>
+            <li><a href="#"><span class="toc_label">6.2</span>What is significance level?</a></li>
+            <li><a href="#"><span class="toc_label">6.3</span>What is margin of error?</a></li>
+            <li><a href="#"><span class="toc_label">6.4</span>What is degrees of freedom?</a></li>
+            <li><a href="#"><span class="toc_label">6.5</span>Non-normality and outliers</a></li>
+            <li><a href="#"><span class="toc_label">6.6</span>kurtosis</a></li>
+        </ul>
+        <li><a href="#"><span class="toc_label">7</span>Worked Python examples</a></li>
+    </ul>
 </div>
+Prediction interval vs Confidence interval

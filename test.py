@@ -1,31 +1,22 @@
-import requests
-import os
-
-os.chdir(r'C:\Users\EricKim\Documents\konosuba14')
-
-base = 'https://i2.wp.com/goodsworkspace.com/wp-content/uploads/2019/02/%EC%BD%94%EB%85%B8%EC%8A%A4%EB%B0%9414_'
-
-temp = [str(i) for i in range(0, 274)]
-
-new = []
-
-for item in temp:
-    if len(item) == 1:
-        new.append('00' + item)
-    if len(item) == 2:
-        new.append('0' + item)
-    if len(item) == 3:
-        new.append(item)
+def generate_time_series(k=200, m=1000, noise_mean=0, noise_std=100, n=50, start_date=datetime.date(2017, 7, 1)):
+    """
+    :param k: slope, increment in upwards/downwards trend (step size)
+    :param m: y-intercept
+    :param noise_mean: mean, parameter for generating random gaussian noise
+    :param noise_std: standard deviation, parameter for generating random gaussian noise
+    :param n: number of samples
+    :param start_date: start point in time-series
+    :return:
+    """
+    xs = np.linspace(0, 1, n, endpoint=False)
+    gaussian_noise = random.gauss(noise_mean, noise_std)
+    ys = [k * x + m + gaussian_noise for x in xs]
+    ts = [start_date + datetime.timedelta(x) * 365 for x in xs]
+    return xs, ys, ts
 
 
-for item in new:
-    url = base + item + '.jpg'
-    filename = url.split('/')[-1]
-    r = requests.get(url, allow_redirects=True)
-    open(filename, 'wb').write(r.content)
+xs, ys, ts = generate_time_series()
 
 
 
-'April 29, 1-2PM'
 
-'Predicting drill bit failure before 15 min it does.'
