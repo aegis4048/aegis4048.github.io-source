@@ -1,86 +1,267 @@
-<div id="toc_container">
-    <p class="toc_title">Contents</p>
-    <ul class="toc_list">
-        <li>
-            <a href="#Understanding confidence interval with analogy"><span class="toc_label">1</span>Understanding
-                confidence interval with analogy</a>
-            <ul>
-                <li><a href="#Uncertainty in rock porosity"><span class="toc_label">Example 1:</span>Uncertainty in rock
-                    porosity</a></li>
-                <li><a href="#Purity of methamphetamine (crystal) in Breaking Bad"><span
-                        class="toc_label">Example 2:</span>Purity of methamphetamine (crystal) in Breaking Bad</a></li>
-            </ul>
-        </li>
-        <li><a href="#quick-highlights"><span class="toc_label">2</span>Key takeaways</a></li>
-        <li><a href="#population_vs_samples"><span class="toc_label">3</span>Population vs Samples</a></li>
-        <ul>
-            <li><a href="#sample_pop_var"><span class="toc_label">Notes:</span>Population variance $\sigma^2$ vs.
-                Sample variance $s^2$</a></li>
-            <li><a href="#python_variance"><span class="toc_label">Pythonic Tip:</span>Difference between Numpy variance
-                and Pandas variance</a></li>
-        </ul>
-        <li><a href="#Confidence interval of different statistics"><span class="toc_label">4</span>Confidence interval
-            of normal distribution</a></li>
-        <ul>
-            <li><a href="#conf_int_of_mean"><span class="toc_label">4.1</span>Confidence interval of mean</a></li>
-            <ul>
-                <li><a href="#dist_stats"><span class="toc_label">Notes:</span>Distribution of various statistics</a>
-                </li>
-                <li><a href="#t_vs_z"><span class="toc_label">Notes:</span>z-score vs t-score</a></li>
-                <li><a href="#python_ci_mean"><span class="toc_label">Pythonic Tip:</span>Computing confidence interval of mean with SciPy</a></li>
-            </ul>
-            <li><a href="#conf_int_of_diff_in_mean"><span class="toc_label">4.2</span>Confidence interval of difference
-                in mean</a></li>
-            <ul>
-                <li><a href="#anova"><span class="toc_label">Notes:</span>Comparing means of more than two samples with ANOVA</a></li>
-                <li><a href="#ind_equal"><span class="toc_label">4.2.1</span>Independent (unpaired) samples, equal
-                    variance - Student's t-interval</a></li>
-                <ul>
-                    <li><a href="#python_ind_equal"><span class="toc_label">Pythonic Tip:</span>Computing student's t-interval</a></li>
-                </ul>
-                <li><a href="#ind_unequal"><span class="toc_label">4.2.2</span>Independent (unpaired) samples, unequal variance - Welch's t-interval</a></li>
-                <ul>
-                    <li><a href="#python_ind_unequal"><span class="toc_label">Pythonic Tip:</span>Computing Welch's t-interval</a></li>
-                </ul>
-                <li><a href="#dep"><span class="toc_label">4.2.3</span>Dependent (paired) samples - Paired t-interval</a></li>
-                <ul>
-                    <li><a href="#python_dep"><span class="toc_label">Pythonic Tip:</span>Computing paired t-interval</a></li>
-                </ul>
-                <li><a href="#which_to_use"><span class="toc_label">Notes:</span>Deciding which t-test to use</a></li>
-            </ul>
-            <li><a href="#conf_int_of_var"><span class="toc_label">4.3</span>Confidence interval of variance</a></li>
-            <ul>
-                <li><a href="#chi_square"><span class="toc_label">Notes:</span>Chi-square $\chi^2$ distribution</a></li>
-                <li><a href="#one_tail_two_tail"><span class="toc_label">Notes:</span>One-tail vs two-tail</a></li>
-                <li><a href="#python_ci_var"><span class="toc_label">Pythonic Tip:</span>Computing confidence interval of variance with SciPy</a></li>
-            </ul>
-            <li><a href="#conf_int_of_other"><span class="toc_label">4.4</span>Confidence interval of other statistics: Bootstrap</a></li>
-            <li><a href="#"><span class="toc_label">4.5</span>Confidence interval of regression</a></li>
-            <li><a href="#"><span class="toc_label">4.6</span>Two-tailed vs one-tailed interval</a></li>
-            <li><a href="#robustness"><span class="toc_label">Notes:</span>Robustness of confidence interval to non-normality</a></li>
-        </ul>
-        <li><a href="#conf_int_non_normal"><span class="toc_label">5</span>Confidence interval of non-normal
-            distribution</a></li>
-        <ul>
-            <li><a href="#"><span class="toc_label">5.1</span>Comparing central tendency of populations</a></li>
-            <li><a href="#"><span class="toc_label">5.2</span>Credible interval</a></li>
-            <li><a href="#"><span class="toc_label">5.3</span>Transform to normal distribution with Box-Cox</a></li>
-            <li><a href="#"><span class="toc_label">5.4</span>Bootstrapping</a></li>
-                <ul>
-                    <li><a href="#"><span class="toc_label">5.4.1</span>Bootstrap CI of statistics</a></li>
-                    <li><a href="#"><span class="toc_label">5.4.1</span>Bootstrap CI of difference in statistics</a></li>
-                </ul>
-        </ul>
-        <li><a href="#"><span class="toc_label">6</span>FAQ's</a></li>
-        <ul>
-            <li><a href="#"><span class="toc_label">6.1</span>What is confidence level?</a></li>
-            <li><a href="#"><span class="toc_label">6.2</span>What is significance level?</a></li>
-            <li><a href="#"><span class="toc_label">6.3</span>What is margin of error?</a></li>
-            <li><a href="#"><span class="toc_label">6.4</span>What is degrees of freedom?</a></li>
-            <li><a href="#"><span class="toc_label">6.5</span>Non-normality and outliers</a></li>
-            <li><a href="#"><span class="toc_label">6.6</span>kurtosis</a></li>
-        </ul>
-        <li><a href="#"><span class="toc_label">7</span>Worked Python examples</a></li>
-    </ul>
+<div><hr></div>
+
+<div id="assumptions_boot"></div>
+
+**Assumptions and Limitations of Bootstrap**
+
+Bootstrapping is great because it saves you from the normality assumption of distributions and all the math you have to know to construct confidence intervals. However, just like many other techniques, bootstrap has its own caveats. While bootstrap is distribution-free, it is not assumption-free. The assumptions are listed in this section.
+
+Please note that there is a humongous variety of the bootstrap procedures, each addressing the particular quirk in either the statistic, the sample size, the dependence, or whatever an issue with the bootstrap could be. I am not introducing all of them here as the in-depth technical discussion of bootstrap needs another devoted post, but I still want you to know some of the critical assumptions; I want you to know what you don't know, so that you can google later to learn in-depth.
+
+<div id="assumption_1"></div>
+<ol class="custom-counter" style="margin-top: 40px;">
+  <li><p class="numbering-p">A sample is a good representation of its underlying population</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>The fundamental principle of bootstrapping is that the original sample is a good representation of its underlying population. Bootstrapping resamples from the original samples. This means that if the original sample is biased, the resulting bootstrap samples will also be biased. However, this is a problem of not just bootstrapping, but all statistical techniques. There's not much you can do if the only piece of information you have about the population is corrupted, after all.</p>
 </div>
-Prediction interval vs Confidence interval
+
+<div id="assumption_2"></div>
+<ol class="custom-counter" style="counter-reset: lis 1;">
+  <li><p class="numbering-p">Insufficient samples make the bootstrap C.I. to be narrower than the analytical C.I.</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>There's a myth in the field of statistics that bootstrap is a <i>"cure"</i> for small sample size. NO, it's not. First, if you have too small sample, by a high chance it is not diverse enough to represent all (reasonably) possible aspects of its population. Therefore, it is not a good representation of its population. Second, small sample size makes its bootstrap C.I. to be narrower than the analytical C.I.. This means that bootstrap C.I. reports small uncertainty even when the sample size is small. Not only this is counter-intuitive, but also it is a violation of the mathematic property of C.I. described by <a href="#eq-1">eq (1)</a>; small sample size $n$ in the denominator of <a href="#eq-1">eq (1)</a> should give wider C.I.. But this is not true with bootstrap C.I. as shown in the below simulation result <a href="#">fig (?)</a>.</p>
+    <p>Three things to note in the figure. First, the upper & lower error bars of bootstrap C.I. of means are asymmetric. This is because bootstrap C.I. is not based on $\pm$ standard error method. This is a very useful property to estimate the <a href="#central_tendency">central tendency</a> of asymmetric (skewed) populations. Second, both bootstrap and analytical C.I. become narrower with the increasing sample size. This intuitively and mathematically makes sense. Third, bootstap C.I. approximates the analyical C.I. very well with large sample size. This is perhaps the most important advantage of using bootstrap. If you have large sample size, you really don't have to worry anything else (except the indepence of samples), and <i>just stick to bootstrap</i>. All the disadvantages of bootstrap will be overcome by the large sample size.</p>
+    <p>One might wonder what is <i>"large"</i> enough in practical applications. Unfortunately, the definition of <i>"large"</i> is different for every applications. In the simulation result, it seems that $n = 20$ falls in the category of <i>"large"</i> to approximate C.I. of the mean of a normally distributed population with bootstrap. On the other hand, $n=100$ seems to be <i>"large"</i> in case of C.I. of the variances of a normally distributed population. The definition of <i>"large $n$"</i> can vary with different applications (ex: non-normal data, C.I. of regression coefficient or covariance). Carefully investigate your samples to have a good definition of <i>"large"</i>.</p>
+    <div id="fig???" class="row">
+        <div class="col"><img src="jupyter_images/analy_vs_boot_cis.png" class=""></div>
+        <div class="col-12"><p class="image-description">Figure ???: Comparison of Bootstrap vs Analytical C.I. for different sample sizes</p></div>
+    </div>
+    <div class="solution_panel closed" style="margin-top: 20px;">
+        <div class="solution_title">
+            <p class="solution_title_string">Source Code For Figure (?)</p>
+            <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
+            </ul>
+        <div class="clearfix"></div>
+        </div>
+        <div class="solution_content">
+            <pre>
+                <code class="language-python">
+                    import matplotlib.pyplot as plt
+                    import numpy as np
+                    from scipy import stats
+
+                    sample_sizes = [3, 5, 8, 10, 15, 20, 30, 50, 80, 100, 500, 1000]
+                    mean = 4            # sample mean
+                    std = 3             # sample standard deviation
+                    boot_iter = 10000   # bootstrap iterations
+
+                    boot_mean_lo = np.array([])
+                    boot_mean_hi = np.array([])
+                    analy_mean_lo = np.array([])
+                    analy_mean_hi = np.array([])
+
+                    boot_var_lo = np.array([])
+                    boot_var_hi = np.array([])
+                    analy_var_lo = np.array([])
+                    analy_var_hi = np.array([])
+
+                    means = np.array([])
+                    variances = np.array([])
+
+                    for size in sample_sizes:
+
+                        np.random.seed(size * 5)
+
+                        arr = np.random.normal(mean, std, size) # randomly draw from a normal distribution
+
+                        # analytical confidence interval of mean
+                        means = np.append(means, np.mean(arr))
+                        analy_conf_mean = stats.t.interval(1 - 0.05, len(arr) - 1, loc=np.mean(arr), scale=stats.sem(arr))
+                        analy_mean_lo = np.append(analy_mean_lo, analy_conf_mean[0])
+                        analy_mean_hi = np.append(analy_mean_hi, analy_conf_mean[1])
+
+                        # bootstrap confidence interval of mean
+                        boot_means = [np.mean(np.random.choice(arr, len(arr))) for _ in range(boot_iter)]
+                        boot_mean_lo = np.append(boot_mean_lo, np.percentile(boot_means, 2.5))
+                        boot_mean_hi = np.append(boot_mean_hi, np.percentile(boot_means, 97.5))
+
+                        # analytical confidence interval of variance
+                        variances = np.append(variances, np.var(arr, ddof=1))
+                        analy_conf_var = (
+                            (len(arr) - 1) * np.var(arr, ddof=1) / stats.chi2.ppf(1 - 0.05 / 2, len(arr) - 1),
+                            (len(arr) - 1) * np.var(arr, ddof=1) / stats.chi2.ppf(0.05 / 2, len(arr) - 1)
+                        )
+                        analy_var_lo = np.append(analy_var_lo, analy_conf_var[0])
+                        analy_var_hi = np.append(analy_var_hi, analy_conf_var[1])
+
+                        # bootstrap confidence interval of variance
+                        boot_vars = [np.var(np.random.choice(arr, len(arr)), ddof=1) for _ in range(boot_iter)]
+                        boot_var_lo = np.append(boot_var_lo, np.percentile(boot_vars, 2.5))
+                        boot_var_hi = np.append(boot_var_hi, np.percentile(boot_vars, 97.5))
+
+
+                    # plotting
+
+                    def styling(ax, xticks, xticklables):
+                        ax.legend(fontsize=14, loc='lower right', framealpha=1, frameon=True)
+                        ax.set_xlabel('Sample sizes', fontsize=16)
+                        ax.set_facecolor('#eeeeee')
+                        ax.grid(True, linestyle='--', color='#acacac')
+                        ax.tick_params(color='grey')
+                        ax.set_xticks(xticks)
+                        ax.set_xticklabels([str(label) for label in xticklables])
+                        _ = [spine.set_edgecolor('grey') for spine in ax.spines.values()]
+
+
+                    x = np.array([i for i in range(len(sample_sizes))])
+                    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+
+                    axes[0].errorbar(x - 0.15, means, yerr=[abs(boot_mean_lo - means), abs(boot_mean_hi - means)],
+                                fmt='o', label='95% bootstrap C.I.', color='k', markersize=8, capsize=5, linewidth=2)
+                    axes[0].errorbar(x + 0.15, means, yerr=np.array([abs(analy_mean_hi - means), abs(analy_mean_lo - means)]),
+                                fmt='o', label='95% analytical C.I.', color='grey', markersize=8, capsize=5, linewidth=2)
+
+                    styling(axes[0], x, sample_sizes)
+                    axes[0].set_ylabel('Sample mean', fontsize=16)
+                    axes[0].set_title('Confidence interval of means $\mu$', fontsize=18)
+                    axes[0].text(0.75, 0.85, 'aegis4048.github.io', fontsize=15, ha='center', va='center',
+                            transform=axes[0].transAxes, color='grey', alpha=0.5);
+
+                    axes[1].errorbar(x - 0.15, means, yerr=[abs(boot_var_lo - variances), abs(boot_var_hi - variances)],
+                                fmt='o', label='95% bootstrap C.I.', color='k', markersize=8, capsize=5, linewidth=2)
+                    axes[1].errorbar(x + 0.15, means, yerr=np.array([abs(analy_var_hi - variances), abs(analy_var_lo - variances)]),
+                                fmt='o', label='95% analytical C.I.', color='grey', markersize=8, capsize=5, linewidth=2)
+
+                    styling(axes[1], x, sample_sizes)
+                    axes[1].set_ylabel('Sample variance', fontsize=16)
+                    axes[1].set_title('Confidence interval of variances $\sigma^2$', fontsize=18)
+                    axes[1].text(0.75, 0.35, 'aegis4048.github.io', fontsize=15, ha='center', va='center',
+                            transform=axes[1].transAxes, color='grey', alpha=0.5);
+
+                    fig.tight_layout()
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div id="assumption_3"></div>
+<ol class="custom-counter" style="counter-reset: lis 2;">
+  <li><p class="numbering-p">Bootstrap fails to estimate extreme quantiles</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>Bootstrap fails to estimate some really weird statistics that depend on very small features of the data. For example, using bootstrapping to determine anything close to extreme values (ex: min, max) of a distribution can be unreliable. There are also problems with estimating extreme quantiles, like 1% or 99%. Note that bootstrapped 95% or 99% CI are themselves at tails of a distribution, and thus could suffer from such a problem, particularly with small sample sizes. Bootstrap works better in the middle of a distribution than at the tails, which makes bootstrapping the median to be robust, whereas bootstrapping the min or max to fail.</p>
+</div>
+
+<div id="assumption_4"></div>
+<ol class="custom-counter" style="counter-reset: lis 3;">
+  <li><p class="numbering-p">Samples are independent and identically distributed (i.i.d.)</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>Another central issue with bootrapping is, "does the resampling procedure preserve the structure of the original sample?" The greatest problem with bootstrapping dependent data is to create samples that have the dependence structures that are sufficiently close to those in the original data. Because it is impossible to preserve it with the naive bootstrap, a sample needs to be i.i.d.</p>
+    <p>This assumption raises a few practical issues when dealing with time series. First, by randomly sampling without constraints, naive bootstrap destroys the time-dependence structure in time series. In time series, all data points are aligned with respect to time, but random resampling does not respect their orders. Second, if there's an upward or downward trend in the means or variances, the trend will be lost due to random resampling. Third, because time series is essentially continuous samples of size 1 for each point in time, resampling a sample is equivalent to the original samples; one learns nothing by resampling. Therefore, resampling of a time series requires new ideas, such as block bootstrapping.</p>
+    <p>There are a few variations of bootstrap that attemtp to preserve the dependency structure of samples, which I will not introduce here due to their mathematical complexities. When using tehchniques based on random sampling, ensure that the samples are i.i.d., or use techniques that preserve (reasonably) the structure of the original data.</p>
+</div>
+
+<div id="assumption_5"></div>
+<ol class="custom-counter" style="counter-reset: lis 4;">
+  <li><p class="numbering-p">Bootstrap iteration (<a href="#monte-carlo">Monte-Carlo method</a>) should be sufficient to reproduce consistent C.I's.</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>Because bootstrap relies on <i>"random"</i> resampling, the result of any statistical analysis performed with bootstrap can vary from time to time. The extent of variability depends on the number of bootstrap samples $r$, and $r$ should be large enough to guarantee convergence of bootstrap statistics to a stable value. Note that there's a distinction between the size of the original sample $n$ and the number of bootstrap samples $r$. We can't change $n$, but we can change $r$ because $r$ is equivalent to the number of <a href="#monte-carlo">Monte-Carlo</a> iterations, which can be set by a statistician.</p>
+    <p>So how do we determine what value of $r$ is <i>"large"</i> enough to guarantee convergence of bootstrap statistics? You can do it by obtaining multiple bootstrap analysis results for increasing number of simulations $r$, and see if the result converges to certain range of values, as shown in <a href="#">fig (?)</a>. In the figure, it seems that $r=10,000$ is a good choice. But practice, you want $r$ to be as large as possible, to an extent where the computational cost not too huge. I've read a research paper where the authors used $r = 500,000$ to really ensure convergence.</p>
+    <div id="fig???" class="row">
+        <div class="col"><img src="jupyter_images/bootstrap_convergence.png" class="bullet-point-image-medium"></div>
+        <div class="col-12"><p class="image-description">Figure ???: Convergence of Bootstrap C.I.</p></div>
+    </div>
+    <div class="solution_panel closed" style="margin-top: 20px;">
+        <div class="solution_title">
+            <p class="solution_title_string">Source Code For Figure (?)</p>
+            <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
+            </ul>
+        <div class="clearfix"></div>
+        </div>
+        <div class="solution_content">
+            <pre>
+                <code class="language-python">
+                    import matplotlib.pyplot as plt
+                    import numpy as np
+                    from scipy import stats
+                    import pandas as pd
+
+
+                    # r, or number of bootstrap samples, or number of Monte-Carlo iterations
+                    r_boots = [10, 20, 50, 70, 100, 150, 300, 500, 700, 1000, 2000, 10000, 20000, 50000, 100000]
+
+                    size = 50            # original sample size
+                    mean = 50            # sample mean
+                    std = 13             # sample standard deviation
+
+                    # randomly draw from a normal distribution
+                    arr = np.random.normal(mean, std, size)
+
+                    boot_mean_lo = np.array([])
+                    boot_mean_hi = np.array([])
+                    results = []
+
+                    for r_boot in r_boots:
+
+                        np.random.seed(r_boot)
+
+                        boot_means = [np.mean(np.random.choice(arr, len(arr))) for _ in range(r_boot)]
+                        results.append(boot_means)
+
+
+                    # plotting
+                    fig, ax = plt.subplots(figsize=(8, 4))
+                    ax.boxplot(results, sym='', whis=[2.5, 97.5], showfliers=False,
+                                         boxprops=dict(linewidth=2.0, color='#4e98c3'),
+                                         whiskerprops=dict(linewidth=2.0, color='#4e98c3', linestyle='--'), vert=True,
+                                         capprops=dict(linewidth=2.0, color='k'),
+                                         medianprops=dict(linewidth=2.0, color='#ad203e'))
+                    ax.set_title('Convergence of 95% Bootstrap C.I. with increasing Monte-Carlo iterations', fontsize=15)
+                    ax.set_ylabel('Sample mean', fontsize=15)
+                    ax.set_xlabel('# of bootstrap samples (Monte-Carlo iterations)', fontsize=15)
+                    ax.set_xticklabels([str(r_boot) for r_boot in r_boots], rotation=45)
+                    ax.set_ylim(41.7, 52.3)
+                    ax.set_facecolor('#eeeeee')
+                    ax.grid(True, linestyle='--', color='#acacac')
+                    ax.tick_params(color='grey')
+                    _ = [spine.set_edgecolor('grey') for spine in ax.spines.values()]
+                    ax.text(0.21, 0.1, 'aegis4048.github.io', fontsize=15, ha='center', va='center',
+                            transform=ax.transAxes, color='grey', alpha=0.5);
+                </code>
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+<div id="assumption_6"></div>
+<ol class="custom-counter" style="counter-reset: lis 5;">
+  <li><p class="numbering-p">Coverage of naive bootstrap is relatively weak compared to more robust bootstrap methods</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>The term, <i>coverage</i>, means the chance at which the statistical estimation with uncertainty includes the population parameter. Ideally, this coverage rate should be close to the nominal value set by a statistician (ex: 90%, 95%, 99%), but this is not always the case. We call the difference between the inferencial sample statistic and the population statistic as <i>bias</i>. Certain statistics, in certain situations, are biased: no matter how many experiments we perform, the average of the statistics is systematically off, either above or below the population value. For example, the sample median is biased when the original sample size $n$ is small, and we sample from skewed distributions. Variations of bootstrapping, such as the Bias Corrected (BC), and Bias Corrected & Accelerated (BCa) attempt to minimize the sampling bias.</p>
+</div>
+
+<div id="assumption_7"></div>
+<ol class="custom-counter" style="counter-reset: lis 6;">
+  <li><p class="numbering-p">Bootstrapping continuous data is a bit tricky</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>The biggest motivation for bootstrapping continuous data would be to acquire uncertainty of a fitted regression model. In regression problems, we assume the data points to be continuous. Bootstrapping makes this a little weird when the dependent variable ($y$) is continuous, because the original populatoin does not have even one <i>exact</i> duplicate, while bootstrap samples are likely to have many <i>exact</i> duplicates. Moreover, the range of independent variables ($x$ in single-regession, $x_1, x_2, ... , x_n$ in multi-regression) changes for each bootstrap sample due to randomness. Since the range of the independent variables defines the amount information available, bootstrapping will lose some of the information in the data. In such cases, alternatives like residual bootstrap (assumes homoscedasticity, or stationary varianace) or wild bootstrap (works for heteroscedasticity, or non-stationary varianace).</p>
+    <p>Unfortunately, the procedure for these alternatives are very complicated, and they are not implemented in <code>Python</code>. To my knowledge, they are implemented in <code>R</code> though.</p>
+</div>
+
+<div id="assumption_8"></div>
+<ol class="custom-counter" style="counter-reset: lis 7;">
+  <li><p class="numbering-p">Bootstrap is not robust in heavy-tailed distributions</p></li>
+</ol>
+
+<div class="left-pad-border">
+    <p>(This section assumes that you understand the caveats of heavy-tailed distributions)</p>
+    <p>Heavy-tailed distributions have a few extreme values (NOT outliers) that are very different from the most of the samples. These extreme values have non-negligible impact on statistical estimations from samples, because the samples are not likely to contain them due to their low chance of occurrence. This violates the first assumption of bootstrapping I explained <a href="#assumption_1">above</a>, because the sample is NOT a good representation of its underlying population. Since bootstrapping heavily depends on the quality of the original sample, it is not robust for distributions with heavy tails. It will require extremely large size of the original sample to overcome such problems.</p>
+    <p>Investigate the distribution shape of the population of your interest, and decide if that particular distribution shape will cause problems with heavy-tailedness. For example, exponential distribution is heavier-tailed than normal distribution, but it is not heavy enough to cause problems. Pareto (infinite variance, infinite mean), t-distribution with <code>df = 2</code> and Cauchy (infinite variance, finite mean) are <i>highly problematic</i> category of distributions. Log-normal distribution has finite variance, so it is theoretically OK, but it can sometimes be heavy tailed enough that the population mean will almost always exceed all of your sample means, which can make inference via a bootstrap tricky. Note that the population mean for lognnormal will not be lower than the sample mean, as the low-occurrence extreme values are on the right tail of the distribution.</p>
+</div>
