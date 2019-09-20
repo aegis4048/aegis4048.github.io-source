@@ -111,7 +111,7 @@ LOGO_WITH_SUBTITLE = "theme/img/logo_with_subtitle.svg"  # logo created at "http
 
 # actually located in 'content/downloads/misc/'. Files in 'content/downloads' will be copied into 'output/downloads' to
 # auto-generate html href link.
-RESUME_PDF_LINK = 'downloads/misc/Resume_Spring_2019.pdf'
+RESUME_PDF_LINK = 'downloads/misc/Resume_Fall_2019.pdf'
 RESUME_BUTTON_TEXT = 'Download CV'
 
 GITHUB_LINK = 'https://github.com/aegis4048'
