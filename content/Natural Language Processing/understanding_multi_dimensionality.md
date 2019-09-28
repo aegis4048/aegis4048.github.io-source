@@ -1,6 +1,7 @@
 Title: Understanding Multi-Dimensionality in Vector Space Modeling
 Tags: data-mining, nlp, dimensional reduction, svd, tf-idf, word2vec, co-occurrence matrix, vector space model, word vectors, 3D, nltk, tokenization, window size, dimensional reduction
-Date: 2019-04-16 09:00
+Date: 2019-04-16
+DatePrev: 2019-04-16
 Slug: understanding_multi-dimensionality_in_vector_space_modeling
 Subtitle:
 Keywords: 

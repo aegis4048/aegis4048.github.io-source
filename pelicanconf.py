@@ -7,8 +7,9 @@ import os
 import shutil
 
 AUTHOR = 'ERIC KIM'
+AUTHOR_LOWER = 'Eric Kim'
 AUTHOR_SHORTENED = 'Eric'
-AUTHOR_SUBTITLE = 'PYTHONIC THINKER & SOLVER, PETROLEUM ENGINEER'
+AUTHOR_SUBTITLE = 'Data Scientist, Petroleum Engineer'
 SITENAME = 'Pythonic Excursions'
 SITESUBTITLE = u'Stories about Python and Data Science'
 SITE_DESCRIPTION = 'Pythonic Excursions | Stories about Python and Data Science'

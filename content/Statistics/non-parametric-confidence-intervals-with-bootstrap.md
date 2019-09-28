@@ -1,6 +1,7 @@
 Title: Non-Parametric Confidence Interval with Bootstrap
 Tags: non-parametric, confidence-interval, bootstrap(stats), statistics
-Date: 2019-01-04 09:00
+Date: 2019-01-04
+DatePrev: 2019-01-04
 Slug: non-parametric-confidence-interval-with-bootstrap
 Subtitle:
 Keywords: 

@@ -1,6 +1,7 @@
 Title: Optimize Computational Efficiency of Skip-Gram with Negative Sampling
 Tags: data-mining, nlp, word2vec, word vectors, window size, skip-gram, neural network, negative sampling, stochastic gradient descent, learning rate, sigmoid, softmax, algorithm complexity, noise distribution 
-Date: 2019-05-26 09:00
+Date: 2019-05-26
+DatePrev: 2019-05-26
 Slug: optimize_computational_efficiency_of_skip-gram_with_negative_sampling
 Subtitle:
 Keywords: 
