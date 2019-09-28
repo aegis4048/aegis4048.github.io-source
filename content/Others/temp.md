@@ -1,6 +1,7 @@
 Title: Parse PDF Files While Retaining Structure with Tabula-py
 Tags: data-mining, pdf, tabula, 
-Date: 2019-02-02 09:00
+Date: 2019-02-02
+DatePrev: 2019-02-02
 Slug: parse-pdf-files-while-retaining-structure-with-tabula-py
 Subtitle:
 Keywords: 

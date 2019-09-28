@@ -1,6 +1,7 @@
 Title: Comprehensive Confidence Intervals for Python Developers
 Tags: confidence interval, statistics, non-normal, normal, non-Gaussian, Gaussian, normality test, hypotheses testing, bootstrap, t-test, f-test, central tendency, box-cox
-Date: 2019-09-08 09:00
+Date: 2019-09-08
+DatePrev: 2019-09-08
 Slug: comprehensive_confidence_intervals_for_python_developers
 Subtitle:
 Keywords: 

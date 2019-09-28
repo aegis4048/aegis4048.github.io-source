@@ -1,6 +1,7 @@
 Title: Demystifying Neural Network in Skip-Gram Language Modeling
 Tags: data-mining, nlp, word2vec, co-occurrence matrix, vector space model, word vectors, window size, skip-gram, neural network, negative sampling, stochastic gradient descent, learning rate
-Date: 2019-05-06 09:00
+Date: 2019-05-06
+DatePrev: 2019-05-06
 Slug: demystifying_neural_network_in_skip_gram_language_modeling
 Subtitle:
 Keywords: 
