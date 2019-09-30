@@ -19,9 +19,9 @@ logger = logging.getLogger(__name__)
 
 
 def set_default_settings(settings):
-    settings.setdefault('TAG_CLOUD_STEPS', 4)
+    settings.setdefault('TAG_CLOUD_STEPS', 3)
     settings.setdefault('TAG_CLOUD_MAX_ITEMS', 100)
-    settings.setdefault('TAG_CLOUD_SORTING', 'random')
+    settings.setdefault('TAG_CLOUD_SORTING', 'alphabetically')
     settings.setdefault('TAG_CLOUD_BADGE', False)
 
 

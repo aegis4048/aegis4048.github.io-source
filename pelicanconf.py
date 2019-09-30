@@ -53,6 +53,7 @@ PLUGINS = ['sitemap',
            'liquid_tags.video',  # embedding videos
            'liquid_tags.include_code',  # including code blocks
            'liquid_tags.literal',
+           'tag_cloud',
            ]
 IGNORE_FILES = ['.ipynb_checkpoints']
 SITEMAP = {
@@ -97,6 +98,7 @@ USE_SHORTCUT_ICONS = True
 # Labels
 RELATED_POSTS_LABEL = 'Related Posts'       # articles that share common tags
 SHARE_POST_INTRO = 'Share This Post :'
+CARD_TEXT = 'MOST POPULAR'
 
 # SMO
 FEATURED_IMAGE = SITEURL + '/theme/img/logo_icon_background.png'
@@ -174,12 +176,21 @@ TEXT_FOOTER = 'Senior undergraduate student at the Univeristy of Texas at Austin
               'strong engineering & statistical background. I am good at creating clean, easy-to-read codes for data ' \
               'analysis. I enjoy assisting my fellow engineers by developing accessible and reproducible codes.'
 EMAIL = 'aegis4048@gmail.com'
+LOCATION = 'Texas, USA'
 COPYRIGHT_NOTICE = 'Handcrafted by me @2018'
 
 INCLUDE_PROGRESSBAR = True
 PROGRESSBAR_COLOR = '#24292e'
 
 # turn off typografy. otherwise the codes in Jupyter won't properly be highlighted
+
+##############################################################################
+
+CARD_POSTS = {
+    'Parse PDF Files While Retaining Structure with Tabula-py': 'parse-pdf-files-while-retaining-structure-with-tabula-py',
+    'Optimize Computational Efficiency of Skip-Gram with Negative Sampling': 'optimize_computational_efficiency_of_skip-gram_with_negative_sampling',
+    'Demystifying Neural Network in Skip-Gram Language Modeling': 'demystifying_neural_network_in_skip_gram_language_modeling',
+}
 
 ##################################################################################################################
 # code snippet for processing variables for auto-generation of Tech Stacks
@@ -191,7 +202,6 @@ TECH_STACKS = {'Python': 5,
                'jQuery': 4,
                'CSS': 4,
                }
-
 
 def process_techstacks(tech_dict, num_max_star):
     num_stacks = len(tech_dict)
