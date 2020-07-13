@@ -90,7 +90,7 @@ CATEGORY_FEED_RSS = None
 CLAIM_GOOGLE = "ZsWFnpirKDgtbmwb1YRymDnSfvnUrpzCbf6LD1F_4TY"
 CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
 
-STATIC_PATHS = ['figures', 'images', 'downloads']
+STATIC_PATHS = ['images', 'downloads']
 DIRECT_TEMPLATES = (('index', 'archives', 'search', '404', 'about'))
 AUTHOR_SAVE_AS = ''
 USE_SHORTCUT_ICONS = True
@@ -99,6 +99,11 @@ USE_SHORTCUT_ICONS = True
 RELATED_POSTS_LABEL = 'Related Posts'       # articles that share common tags
 SHARE_POST_INTRO = 'Share This Post :'
 CARD_TEXT = 'MOST POPULAR'
+CARD_POSTS = {
+    'Parse PDF Files While Retaining Structure with Tabula-py': 'parse-pdf-files-while-retaining-structure-with-tabula-py',
+    'Comprehensive Confidence Intervals for Python Developers': 'comprehensive_confidence_intervals_for_python_developers',
+    'Multiple Linear Regression and Visualization in Python': 'mutiple_linear_regression_and_visualization_in_python',
+}
 
 # SMO
 FEATURED_IMAGE = SITEURL + '/theme/img/logo_icon_background.png'
@@ -171,12 +176,11 @@ INDEX_PAGE_DESCRIPTION = u'Stories About Python and Data Science | by Eric Kim'
 ##############################################################################
 
 FOOTER_TITLE = 'ABOUT ERIC'
-TEXT_FOOTER = 'Senior undergraduate student at the Univeristy of Texas at Austin, Hildebrand Department of Petroleum ' \
-              'Engineering, the #1 petroleum engineering school in the US. I am a self-taught Python developer with ' \
+TEXT_FOOTER = 'Petroleum engineering analyst at <a href="https://flogistix.com/" target="blank">Flogistix</a>. I am a self-taught Python developer with ' \
               'strong engineering & statistical background. I am good at creating clean, easy-to-read codes for data ' \
               'analysis. I enjoy assisting my fellow engineers by developing accessible and reproducible codes.'
 EMAIL = 'aegis4048@gmail.com'
-LOCATION = 'Texas, USA'
+LOCATION = 'Oklahoma, USA'
 COPYRIGHT_NOTICE = 'Handcrafted by me @2018'
 
 INCLUDE_PROGRESSBAR = True
@@ -186,13 +190,6 @@ PROGRESSBAR_COLOR = '#24292e'
 
 ##############################################################################
 
-CARD_POSTS = {
-    'Parse PDF Files While Retaining Structure with Tabula-py': 'parse-pdf-files-while-retaining-structure-with-tabula-py',
-    'Optimize Computational Efficiency of Skip-Gram with Negative Sampling': 'optimize_computational_efficiency_of_skip-gram_with_negative_sampling',
-    'Demystifying Neural Network in Skip-Gram Language Modeling': 'demystifying_neural_network_in_skip_gram_language_modeling',
-}
-
-##################################################################################################################
 # code snippet for processing variables for auto-generation of Tech Stacks
 NUM_MAX_STAR = 5
 TECH_STACKS = {'Python': 5,
