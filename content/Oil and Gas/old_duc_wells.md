@@ -1,6 +1,7 @@
 Title: How Do Old DUC Wells Become "Dead" DUCs?
 Tags: oil-and-gas, oil, gas, DUC, drilling, horizontals, verticals, completion, production, recent-trend, energy-shortage, EIA, DrillingInfo, Enverus, DPR, dead-duc
 Date: 2023-02-10
+DatePrev: 2023-02-10
 Slug: how_do_old_duc_wells_become_dead_ducs
 Subtitle:
 Keywords: 
