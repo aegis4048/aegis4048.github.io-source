@@ -1,6 +1,7 @@
 Title: DUC Wells and Their Economic Complications
 Tags: oil-and-gas, oil, gas, DUC, drilling, horizontals, verticals, completion, production, recent-trend, energy-shortage, EIA, DrillingInfo, Enverus, DPR
 Date: 2023-02-09
+DatePrev: 2023-02-09
 Slug: duc_wells_and_their_economic_complications
 Subtitle:
 Keywords: 
