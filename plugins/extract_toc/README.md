@@ -77,7 +77,7 @@ Add something like this to your Pelican templates if missing:
 reStructuredText reader
 -----------------------
 
-To add a table of contents to your reStructuredText document (`.rst`) you need to add a `.. contents::` directive to its beginning. See the [docutils documentation](http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-contents) for more details.
+To add a table of contents to your reStructuredText document (`.rst`) you need to add a `.. contents::` directive to its beginning. See the [docutils documentation](http://docutils.sourceforge.net/docs/ref/rst/directives.html#article-sidebar) for more details.
 
 ```rst
 My super title
