@@ -1,4 +1,4 @@
-Compound,CAS,Formula,Gross Heating Value Ideal Gas [Btu/ft^3],Molar Mass [g/mol],Gross Heating Value Ideal Gas [Btu/lbm],Ideal Gas Relative Density @60F:1atm,Liq. Relative Density @60F:1atm,API Gravity @60F:1atm,Is BTEX,Is Aromatic,Is Naphethenic,Is Hydrocarbon,Is Hydroxyl,Is Paraffinic,Others
+Compound,CAS,Formula,Gross Heating Value Ideal Gas [Btu/ft^3],Molar Mass [g/mol],Gross Heating Value Ideal Gas [Btu/lbm],Ideal Gas Relative Density @60F:1atm,Liq. Relative Density @60F:1atm,API Gravity @60F:1atm,Is BTEX,Is Aromatic,Is Naphthenic,Is Hydrocarbon,Is Hydroxyl,Is Paraffinic,Others
 methane,74-82-8,CH4,1010.0,16.0425,23892.0,0.5539,0.3,340.0,False,False,False,True,False,True,False
 ethane,74-84-0,C2H6,1769.7,30.069,22334.0,1.0382,0.35628,265.66,False,False,False,True,False,True,False
 propane,74-98-6,C3H8,2516.1,44.0956,21654.0,1.5225,0.50719,147.49,False,False,False,True,False,True,False
