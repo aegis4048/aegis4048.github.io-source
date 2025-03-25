@@ -1,23 +1,35 @@
-<div id="toc_container" class="display-none">
-    <p class="toc_title"><i class="fas fa-list"></i>Contents</p>
-    <ul class="toc_list">
-        <li><a href="#introduction"><span class="toc_label">0.</span>
-            Introduction</a></li>
-        <li><a href="#1.-Industry-Practices-for-VRU-Sizing"><span class="toc_label">1.</span>
-            Industry Practices for VRU Sizing</a></li>
-        <li><a href="#2.-Predicting-lash-gas-flowrates-with-process-simulations"><span class="toc_label">2.</span>
-            Predicting lash gas flowrates with process simulations</a></li>
-            <ul>
-                <li><a href="#2.1.-Site-(operational)-setups"><span class="toc_label">2.1.</span>
-                    Site (operational) setups</a></li>
-                <li><a href="#2.2.-Simulation-scenarios"><span class="toc_label">2.2.</span>
-                    Simulation scenarios</a></li>
-            </ul>
-        <li><a href="#3.-Simulation-results"><span class="toc_label">3.</span>
-            Simulation results</a></li>
-        <li><a href="#4.-VRU-Economics"><span class="toc_label">4.</span>
-            VRU Economics</a></li>
-        <li><a href="#5.-Conclusion/Summary"><span class="toc_label">5.</span>
-            Conclusion/Summary</a></li>
-    </ul>
-</div>
+<div class="highlights" id="main_components">
+    <div class="highlights-title">Main compartments of oil-flooded screw compressor</div>
+    <div class="highlights-content">
+        <div class="row eq-terms-font">
+            <div class="col-3 bold"><p>Suction (inlet) scrubber<p></div>
+            <div class="col-1 bold"><p>:<p></div>
+            <div class="col-8"><p>Small two-phase separator that separates any entrained liquid gas. The entrained liquid maybe either mist or liquid dropouts due to temperature drop while traveling the pipe from gas source to the compressor inlet. Entrained liquid falls down due to gravity while gas travels upward. Any residual liquid that didn’t fall down are captured my the mist extracter/coalescer. Inlet separation is necessary to prevent lube oil from being contaminated by mixing with liquid phase hydrocarbon. Liquid accumulated at the bottom of the suction scrubber is periodically removed by a discharge system (either a pressurized blowdown or pump). <p></div>
+        </div>
+        <div class="row eq-terms-font">
+            <div class="col-3 bold"><p>Compression chamber<p></div>
+            <div class="col-1 bold"><p>:<p></div>
+            <div class="col-8"><p>A place where actual compression takes place. It has two inlets. One for gas, and another for lube oil. It has one outlet, which discharges a pressurized two-phase fluid of both gas and lube oil. The two intermeshing helical rotors reduce volume of gas, pressurize liquid, and generated heat of compression. The heat is absorbed and taken away by the lube oil that “floods” the chamber. The compressor receives various control signal from the PLC. The compressor receives rotating energy from a driver.<p></div>
+        </div>
+        <div class="row eq-terms-font">
+            <div class="col-3 bold"><p>Driver<p></div>
+            <div class="col-1 bold"><p>:<p></div>
+            <div class="col-8"><p>Can be either gas engine or electric motor. The driver generates rotating energy, transfer it to a shaft and turns the compressor rotors. Separate or shared drivers can be used for cooling fans as well.<p></div>
+        </div>
+        <div class="row eq-terms-font">
+            <div class="col-3 bold"><p>Flowrate capacity<p></div>
+            <div class="col-1 bold"><p>:<p></div>
+            <div class="col-8"><p>20–2,000 MSCFD. The lower limit of 20 MSCFD is necessary to keep the compressor running hot and operating above the gas dew point temperature, preventing gas condensation that contaminates lube oil. Too little volume cannot generate enough heat of compression to keep the compressor hot. Note that this range depends on the manufacturer/model. The maximum flowrate limit can be extended by installing additional compressors.<p></div>
+        </div>
+        <div class="row eq-terms-font">
+            <div class="col-3 bold"><p>Horsepower Capacity<p></div>
+            <div class="col-1 bold"><p>:<p></div>
+            <div class="col-8"><p>50–300 HP. This range varies significantly depending on the manufacturer/model.<p></div>
+        </div>
+        <div class="row eq-terms-font">
+            <div class="col-3 bold"><p>Gear Ratio<p></div>
+            <div class="col-1 bold"><p>:<p></div>
+            <div class="col-8"><p>1–3. While a higher gear ratio increases flowrate capacity, it also consumes more power. The gear ratio cannot exceed the machine's horsepower limit.<p></div>
+        </div>
+    </div>
+</div> 
