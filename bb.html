@@ -1,35 +1,172 @@
-<div class="highlights" id="main_components">
-    <div class="highlights-title">Main compartments of oil-flooded screw compressor</div>
-    <div class="highlights-content">
-        <div class="row eq-terms-font">
-            <div class="col-3 bold"><p>Suction (inlet) scrubber<p></div>
-            <div class="col-1 bold"><p>:<p></div>
-            <div class="col-8"><p>Small two-phase separator that separates any entrained liquid gas. The entrained liquid maybe either mist or liquid dropouts due to temperature drop while traveling the pipe from gas source to the compressor inlet. Entrained liquid falls down due to gravity while gas travels upward. Any residual liquid that didn’t fall down are captured my the mist extracter/coalescer. Inlet separation is necessary to prevent lube oil from being contaminated by mixing with liquid phase hydrocarbon. Liquid accumulated at the bottom of the suction scrubber is periodically removed by a discharge system (either a pressurized blowdown or pump). <p></div>
-        </div>
-        <div class="row eq-terms-font">
-            <div class="col-3 bold"><p>Compression chamber<p></div>
-            <div class="col-1 bold"><p>:<p></div>
-            <div class="col-8"><p>A place where actual compression takes place. It has two inlets. One for gas, and another for lube oil. It has one outlet, which discharges a pressurized two-phase fluid of both gas and lube oil. The two intermeshing helical rotors reduce volume of gas, pressurize liquid, and generated heat of compression. The heat is absorbed and taken away by the lube oil that “floods” the chamber. The compressor receives various control signal from the PLC. The compressor receives rotating energy from a driver.<p></div>
-        </div>
-        <div class="row eq-terms-font">
-            <div class="col-3 bold"><p>Driver<p></div>
-            <div class="col-1 bold"><p>:<p></div>
-            <div class="col-8"><p>Can be either gas engine or electric motor. The driver generates rotating energy, transfer it to a shaft and turns the compressor rotors. Separate or shared drivers can be used for cooling fans as well.<p></div>
-        </div>
-        <div class="row eq-terms-font">
-            <div class="col-3 bold"><p>Flowrate capacity<p></div>
-            <div class="col-1 bold"><p>:<p></div>
-            <div class="col-8"><p>20–2,000 MSCFD. The lower limit of 20 MSCFD is necessary to keep the compressor running hot and operating above the gas dew point temperature, preventing gas condensation that contaminates lube oil. Too little volume cannot generate enough heat of compression to keep the compressor hot. Note that this range depends on the manufacturer/model. The maximum flowrate limit can be extended by installing additional compressors.<p></div>
-        </div>
-        <div class="row eq-terms-font">
-            <div class="col-3 bold"><p>Horsepower Capacity<p></div>
-            <div class="col-1 bold"><p>:<p></div>
-            <div class="col-8"><p>50–300 HP. This range varies significantly depending on the manufacturer/model.<p></div>
-        </div>
-        <div class="row eq-terms-font">
-            <div class="col-3 bold"><p>Gear Ratio<p></div>
-            <div class="col-1 bold"><p>:<p></div>
-            <div class="col-8"><p>1–3. While a higher gear ratio increases flowrate capacity, it also consumes more power. The gear ratio cannot exceed the machine's horsepower limit.<p></div>
-        </div>
-    </div>
-</div> 
+<div id="toc_container" class="display-none">
+    <p class="toc_title"><i class="fas fa-list"></i>Contents</p>
+    <ul class="toc_list">
+        <li><a href="#introduction"><span class="toc_label">0.</span>
+            Introduction</a>
+        </li>
+        <li><a href="#1.-Characteristics-of-oil-flooded-screw-compressors"><span class="toc_label">1.</span>
+            Characteristics of oil-flooded screw compressors</a>
+        </li>
+        <li><a href="#2.-Screw-compressor-(core)-working-principles"><span class="toc_label">2.</span>
+            Screw compressor (core) working principles</a>
+        </li>
+        <ul>
+            <li><a href="#2.1.-Rotors-(male-and-female)"><span class="toc_label">2.1.</span>
+                Rotors (male and female)</a>
+            </li>
+            <li><a href="#2.2.-Direct-driven-(non-geared)"><span class="toc_label">2.2.</span>
+                Direct-driven (non-geared)</a>
+            </li>
+            <li><a href="#2.3.-Gear-driven-(geared)"><span class="toc_label">2.3.</span>
+                Gear-driven (geared)</a>
+            </li>
+            <li><a href="#2.4.-Gear-Ratio-&-Limitations"><span class="toc_label">2.4.</span>
+                Gear Ratio & Limitations</a>
+            </li>
+            <li><a href="#2.5.-Driver-and-Driving-Shaft"><span class="toc_label">2.5.</span>
+                Driver and Driving Shaft</a>
+            </li>
+        </ul>
+        <li><a href="#3.-Choice-of-a-Driver:-Electric-Motor-or-Gas-Engine"><span class="toc_label">3.</span>
+            Choice of a Driver: Electric Motor or Gas Engine</a>
+        </li>
+        <ul>
+            <li><a href="#3.1.-Gas-engine-compressor"><span class="toc_label">3.1.</span>
+                Gas engine compressor</a>
+            </li>
+            <li><a href="#3.2.-Electric-motor-compressor"><span class="toc_label">3.2.</span>
+                Electric motor compressor</a>
+            </li>
+        </ul>
+        <li><a href="#4.-Compressor-Package-Key-Equipment-Summary"><span class="toc_label">4.</span>
+            Compressor Package Key Equipment Summary</a>
+        </li>
+        <li><a href="#5.-Process-flow,-model-types-and-P&ID"><span class="toc_label">5.</span>
+            Process flow, model types and P&ID</a>
+        </li>
+        <ul>
+            <li><a href="#Type-A:-Electric-Driver/Electric-Pump-Dump/Electric-Recycle"><span class="toc_label">Type A.</span>
+                Full electric</a>
+            </li>
+            <li><a href="#Type-B:-Electric/Pneumatic-Dump/Electric-Recycle"><span class="toc_label">Type B.</span>
+                Electric w/ pneumatic dump</a>
+            </li>
+            <li><a href="#Type-C:-Electric/Pneumatic-Dump/Pneumatic-Recycle"><span class="toc_label">Type C.</span>
+                Electric w/ pneumatic dump & recycle </a>
+            </li>
+            <li><a href="#Type-D:-Gas-Engine/Pneumatic-Dump/Pneumatic-Recycle"><span class="toc_label">Type D.</span>
+                Gas engine</a>
+            </li>
+        </ul>
+        <li><a href="#6.-Pneumatic-liquid-dump-cycle-(blowcase)"><span class="toc_label">6.</span>
+            Pneumatic liquid dump cycle (blowcase)</a>
+        </li>
+        <ul>
+            <li><a href="#note_1"><span class="toc_label">Note 1:</span>
+                Pressure equalizing valve (CV-1001)</a>
+            </li>
+        </ul>
+        <li><a href="#7.-Control-Devices-Working-Mechanisms"><span class="toc_label">7.</span>
+            Control Devices Working Mechanisms</a>
+        </li>
+        <ul>
+            <li><a href="#7.1.-Electric-flow-control-valve"><span class="toc_label">7.1.</span>
+                Electric flow control valve</a>
+            </li>
+            <li><a href="#7.2.-Pneumatic-flow-control-valve"><span class="toc_label">7.2.</span>
+                Pneumatic flow control valve</a>
+            </li>
+            <li><a href="#7.3.-Solenoid-valve"><span class="toc_label">7.3.</span>
+                Solenoid valve</a>
+            </li>
+            <li><a href="#7.4.-3-Way-thermostatic-valve"><span class="toc_label">7.4.</span>
+                3-Way thermostatic valve</a>
+            </li>
+            <li><a href="#7.5.-Liquid-level-switches"><span class="toc_label">7.5.</span>
+                Liquid level switches</a>
+            </li>
+            <ul>
+                <li><a href="#7.5.1.-3-Way-pneumatic-type"><span class="toc_label">7.5.1.</span>
+                    3-Way pneumatic type</a>
+                </li>
+                <li><a href="#7.5.2.-Electric-type"><span class="toc_label">7.5.2.</span>
+                    Electric type</a>
+                </li>
+            </ul>
+            <li><a href="#7.6.-Electric-liquid-pump"><span class="toc_label">7.6.</span>
+                Electric liquid pump</a>
+            </li>
+            <li><a href="#7.7.-Pressure-safety-valves"><span class="toc_label">7.7.</span>
+                Pressure safety valves</a>
+            </li>
+            <li><a href="#7.8.-Transmitters"><span class="toc_label">7.8.</span>
+                Transmitters</a>
+            </li>
+            <li><a href="#7.9.-Suction-control-valve"><span class="toc_label">7.9.</span>
+                Suction control valve</a>
+            </li>
+        </ul>
+        <li><a href="#8.-Pressure-control"><span class="toc_label">8.</span>
+            Pressure control</a>
+        </li>
+        <ul>
+            <li><a href="#8.1.-VFD-and-PID-Loop"><span class="toc_label">8.1.</span>
+                VFD and PID Loop</a>
+            </li>
+            <li><a href="#8.2.-Recycle-mode"><span class="toc_label">8.2.</span>
+                Recycle mode</a>
+            </li>
+            <li><a href="#8.3.-Pressure-setpoint-scenarios"><span class="toc_label">8.3.</span>
+                Pressure setpoint scenarios</a>
+            </li>
+            <ul>
+                <li><a href="#8.3.1.-VRT-vapor-recovery"><span class="toc_label">8.3.1.</span>
+                    VRT vapor recovery</a>
+                </li>
+                <li><a href="#8.3.2.-Tank-vapor-recovery"><span class="toc_label">8.3.2.</span>
+                    Tank vapor recovery</a>
+                </li>
+                <li><a href="#8.3.3.-Heater-vapor-recovery"><span class="toc_label">8.3.3.</span>
+                    Heater vapor recovery</a>
+                </li>
+                <li><a href="#8.3.4.-Separator-drawdown"><span class="toc_label">8.3.4.</span>
+                    Separator drawdown</a>
+                </li>
+                <li><a href="#8.3.5.-Casing-drawdown"><span class="toc_label">8.3.5.</span>
+                    Casing drawdown</a>
+                </li>
+                <ul>
+                    <li><a href="#8.3.5.1.-SRP-Casing-drawdown"><span class="toc_label">8.3.5.1.</span>
+                        SRP Casing drawdown</a>
+                    </li>
+                    <li><a href="#8.3.5.2.-ESP-Casing-drawdown"><span class="toc_label">8.3.5.2.</span>
+                        ESP Casing drawdown</a>
+                    </li>
+                </ul>
+                <li><a href="#note_2"><span class="toc_label">Note 2:</span>
+                    Relief to flare/combustor</a>
+                </li>
+            </ul>
+        </ul>
+        <li><a href="#9.-Temperature-control"><span class="toc_label">9.</span>
+            Temperature control</a>
+            <ul>
+                <li><a href="#9.1.-Electric-models"><span class="toc_label">9.1.</span>
+                    Electric models</a>
+                </li>
+                <li><a href="#9.2.-Gas-engine-models"><span class="toc_label">9.2.</span>
+                    Gas engine models</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#10.-Lube-oil-contamination-problems"><span class="toc_label">10.</span>
+            Lube oil contamination problems</a>
+        </li>
+        <li><a href="#11.-Shutdown-triggers"><span class="toc_label">11.</span>
+            Shutdown triggers</a>
+        </li>
+        <li><a href="#12.-Rental-vs.-Purchase"><span class="toc_label">12.</span>
+            Rental vs. Purchase</a>
+        </li>
+    </ul>
+</div>
