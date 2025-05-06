@@ -6,7 +6,7 @@ Slug: operation_of_oil_flooded_screw_compressor_explained
 Subtitle:
 Keywords: 
 Featured_Image: images/featured_images/screw_compressor.png
-readingTime: 112
+readingTime: 122
 Social_Media_Description: Operation of Oil-Flooded Screw Compressor Explained
 IndexPreview: A detailed guide to oil-flooded screw compressor operations, covering compressor characteristics, operating capacity, unit P&ID, blowcase systems, control device mechanisms (valves and switches), pressure and temperature control, recycle mode, surface facility P&ID applications, lube oil contamination issues, electric vs. gas engine model comparisons, and more.
 {% notebook downloads/notebooks/screw_compressor.ipynb cells[:] %}
